@@ -275,6 +275,9 @@ class Chat implements MessageComponentInterface {
             $uid = $from->userId;
             $convId = (int)($decoded['conversation_id'] ?? 0);
             $text = trim($decoded['text'] ?? '');
+            if(!$text){
+                $text = trim($decoded['html'] ?? '');
+            }
             if (!$uid || !$convId || $text === '') { $from->send(json_encode(['type'=>'chat','status'=>'error','message'=>'parâmetros inválidos'])); return; }
             try {
                 // insere mensagem
@@ -480,6 +483,28 @@ class Chat implements MessageComponentInterface {
             }
             return;
         }
+        // WIZZ (chamar atenção)
+        if ($action === 'wizz') {
+            $uid = $from->userId;
+            $convId = (int)($decoded['conversation_id'] ?? 0);
+            if (!$uid || !$convId) { $from->send(json_encode(['type'=>'wizz','status'=>'error','message'=>'parâmetros inválidos'])); return; }
+            try {
+                $stmt = $this->pdo->prepare('SELECT user_id FROM conversation_participants WHERE conversation_id = ?');
+                $stmt->execute([$convId]);
+                $parts = $stmt->fetchAll(\PDO::FETCH_COLUMN);
+                $payload = ['type'=>'wizz','conversation_id'=>$convId,'from'=>$uid,'from_name'=>$this->getUserDisplayNameById($uid)];
+                foreach ($parts as $pId) {
+                    if (isset($this->userConnections[$pId])) {
+                        $this->userConnections[$pId]->send(json_encode($payload));
+                    }
+                }
+                $from->send(json_encode(['type'=>'wizz','status'=>'ok']));
+            } catch (\Throwable $e) {
+                logmsg('Wizz error: '.$e->getMessage());
+                $from->send(json_encode(['type'=>'wizz','status'=>'error','message'=>'erro interno']));
+            }
+            return;
+        }
         // default unknown action
         $from->send(json_encode(['type'=>'error','message'=>'Ação desconhecida']));
     }
@@ -545,6 +570,23 @@ class Chat implements MessageComponentInterface {
             $stmt->execute([$id]);
             return $stmt->fetchColumn();
         } catch (\Throwable $e) { return null; }
+    }
+
+    // adicione este método dentro da classe Chat, no handler 'auth' — logo após registrar a conexão:
+    protected function notifyPresence($userId, $isOnline) {
+        try {
+            $stmt = $this->pdo->prepare('SELECT contact_id FROM contacts WHERE user_id = ?');
+            $stmt->execute([$userId]);
+            $contacts = $stmt->fetchAll(\PDO::FETCH_COLUMN);
+            $payload = ['type'=>'presence_update','user_id'=>$userId,'online'=> $isOnline ? 1 : 0, 'last_seen' => $isOnline ? null : date('Y-m-d H:i:s')];
+            foreach ($contacts as $cId) {
+                if (isset($this->userConnections[$cId])) {
+                    $this->userConnections[$cId]->send(json_encode($payload));
+                }
+            }
+        } catch (\Throwable $e) {
+            logmsg('notifyPresence error: '.$e->getMessage());
+        }
     }
 }
 

@@ -131,3 +131,7 @@ UPDATE conversations SET last_message_id = (SELECT id FROM messages WHERE conver
 ALTER TABLE users ADD INDEX idx_email (email);
 ALTER TABLE messages ADD INDEX idx_sender (sender_id);
 ALTER TABLE friend_requests ADD INDEX idx_fr_status (status);
+
+-- execute no MySQL (substitua nomes se diferente)
+ALTER TABLE users ADD COLUMN IF NOT EXISTS presence TINYINT(1) NOT NULL DEFAULT 0;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS last_seen DATETIME NULL;

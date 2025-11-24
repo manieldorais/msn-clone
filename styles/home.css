@@ -326,6 +326,9 @@ textarea {
 		padding: 12px 14px;
 	}
 }
+.hide{
+	display:none;
+}
 /* Pequenos estilos para adicionar/convites dentro da sidebar */
 .sidebar-controls { padding:8px; border-bottom:1px solid rgba(0,0,0,0.04); display:flex; gap:8px; align-items:center; }
 .btn.small { padding:6px 8px; font-size:13px; border-radius:4px; }

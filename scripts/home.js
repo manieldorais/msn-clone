@@ -127,11 +127,12 @@
     
     // enviar mensagem (via WebSocket -> servidor persiste e re‑envia)
 	convSend && convSend.addEventListener('click', () => {
-		const text = (convInput.value || '').trim();
+		const html = (convInput.value || '').trim(); // fallback plaintext when CKEditor not used
+		const text = (function(h){ try { const tmp=document.createElement('div'); tmp.innerHTML = h; return tmp.textContent.trim(); } catch(e){ return (h||'').trim(); } })(html);
 		if (!text || !window.currentConversation) return;
 		const socket = window.appWebSocket;
 		if (!socket || socket.readyState !== WebSocket.OPEN) { alert('Sem conexão WS'); return; }
-		socket.send(JSON.stringify({ type: 'chat', conversation_id: window.currentConversation, text }));
+		socket.send(JSON.stringify({ type: 'chat', conversation_id: window.currentConversation, text: text, html: html }));
 		convInput.value = '';
 	});
 	
@@ -187,7 +188,7 @@
             ? 'Você diz:'
             : (m.sender_name ? `${m.sender_name} diz:` : (m.sender_id ? ('ID ' + m.sender_id + ' diz:') : 'Sistema:'));
         const text = m.content || m.text || m.body || '';
-        div.innerHTML = `<div class="msg-header">${escapeHtml(who)}</div><div class="msg-body">${escapeHtml(text)}</div>`;
+        div.innerHTML = `<div class="msg-header">${escapeHtml(who)}</div><div class="msg-body">${text}</div>`;
         container.appendChild(div);
         container.scrollTop = container.scrollHeight;
     }
@@ -224,7 +225,7 @@
 			console.warn('Notification failed:', e);
 		}
 	}
-	
+	window.showNotification = showNotification; // exportar globalmente
 	// -- Connection & message handling ---------------------------------------
 	function connect() {
 		ws = new WebSocket(WS_URL);
@@ -259,6 +260,7 @@
         log('recv ' + JSON.stringify(data));
 
         // OPEN_CONVERSATION response (server created or returned a conversation id)
+		if (data.type === 'wizz') { handleWizz(data.from || data.from_id); return; }
         if (data.type === 'open_conversation') {
             if (data.status === 'ok' && data.conversation_id) {
                 currentConversation = parseInt(data.conversation_id, 10);
@@ -363,7 +365,24 @@
         return;
     }
 
-    // outros tipos deixados para handlers existentes
+    // presença (atualização de contato)
+if (data.type === 'presence_update') {
+    // update single contact dot
+    const userId = String(data.user_id || data.userId);
+    const el = document.querySelector(`.contact[data-id="${userId}"]`);
+    if (el) {
+        const dot = el.querySelector('.status-dot');
+        if (dot) dot.style.background = (data.online ? '#4caf50' : '#b3b3b3');
+        // optional: show last_seen tooltip when offline
+        if (!data.online && data.last_seen) el.title = 'Visto em: ' + data.last_seen;
+    } else {
+        // se não existe, pode requisitar lista de contatos para sincronizar
+        if (typeof requestContacts === 'function') requestContacts();
+    }
+    return;
+}
+
+// outros tipos deixados para handlers existentes
     log('Unhandled WS message type: ' + (data.type || 'unknown'));
 }
 	
@@ -386,30 +405,21 @@
 	
 	// -- Rendering ------------------------------------------------------------
 	function renderContacts(list) {
-		const favContainer = document.getElementById('favorites');
-		const other = document.getElementById('other-contacts');
-		favContainer.innerHTML = '';
-		other.innerHTML = '';
-		list.forEach(c => {
-			const div = document.createElement('div');
-			div.className = 'contact';
-			div.tabIndex = 0;
-			div.dataset.id = c.id;
-			div.dataset.name = c.display_name || c.email;
-			// store conv id placeholder if available
-			if (c.conversation_id) div.dataset.conv = c.conversation_id;
-			div.innerHTML = `<div class="status-dot" style="background:${c.presence==='online'?'#71b603':'#b3b3b3'}"></div><span>${escapeHtml(c.display_name || c.email)}</span>`;
-			div.addEventListener('click', () => openConversationForContact(c));
-			div.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openConversationForContact(c); } });
-			if ((c.group_name || '').toLowerCase() === 'favorites') {
-				favContainer.appendChild(div);
-			} else {
-				other.appendChild(div);
-			}
-		});
-		const favTitle = document.querySelector('.group-title');
-		if (favTitle) favTitle.textContent = `▼ Favoritos (${favContainer.children.length})`;
-	}
+        const other = document.getElementById('other-contacts');
+        if (!other) return;
+        other.innerHTML = '';
+        (list || []).forEach(c => {
+            const div = document.createElement('div');
+            div.className = 'contact';
+            div.dataset.id = c.id;
+            div.dataset.email = c.email || '';
+            div.tabIndex = 0;
+            // presence: c.presence == 1 -> online
+            const dotColor = (c.presence && parseInt(c.presence,10)===1) ? '#4caf50' : '#b3b3b3';
+            div.innerHTML = `<div class="status-dot" style="width:10px;height:10px;border-radius:50%;background:${dotColor};margin-right:8px;flex:0 0 10px"></div><span>${escapeHtml(c.display_name || c.email || ('ID ' + c.id))}</span>`;
+            other.appendChild(div);
+        });
+    }
 	
 	function renderInvites(incoming, outgoing) {
 		const invitesEl = document.getElementById('invites');
@@ -517,4 +527,173 @@ function escapeHtml(s){
     }
     other && other.addEventListener('click', onClick);
     fav && fav.addEventListener('click', onClick);
+})();
+
+(function(){
+    const convEditorEl = document.getElementById('convEditor');
+    const convInput = document.getElementById('convInput'); // fallback
+    const convSend = document.getElementById('convSend');
+    const wizzBtn = document.getElementById('wizzBtn');
+    let convEditorInstance = null;
+
+    // init CKEditor (Classic) if disponível
+    if (window.ClassicEditor && convEditorEl) {
+        ClassicEditor.create(convEditorEl, {
+            toolbar: ['bold','italic','link','bulletedList','numberedList','undo','redo','heading'],
+        }).then(editor => {
+            convEditorInstance = editor;
+        }).catch(err => { console.warn('CKEditor init failed', err); });
+    }
+
+    // --- EMOJI PICKER ------------------------------------------------
+    const emojiBtn = document.querySelector('.tool-btn[title="Emoticons"]');
+    const emojiList = ['😀','😃','😄','😁','😆','😂','🤣','😊','😍','😘','😜','🤔','😎','😭','😡','👍','👎','🙏','🎉','🔥','💯','😴','🤖','🎧','🎵'];
+    let emojiPanel = null;
+
+    function createEmojiPanel(){
+        if (emojiPanel) return;
+        emojiPanel = document.createElement('div');
+        emojiPanel.className = 'emoji-panel';
+        emojiPanel.setAttribute('role','dialog');
+        emojiPanel.style.position = 'absolute';
+        emojiPanel.style.zIndex = 9999;
+        emojiPanel.style.padding = '8px';
+        emojiPanel.style.border = '1px solid #ddd';
+        emojiPanel.style.background = '#fff';
+        emojiPanel.style.boxShadow = '0 4px 10px rgba(0,0,0,0.08)';
+        emojiPanel.style.borderRadius = '6px';
+        emojiPanel.style.display = 'grid';
+        emojiPanel.style.gridTemplateColumns = 'repeat(8, 28px)';
+        emojiPanel.style.gap = '6px';
+        emojiPanel.style.width = 'auto';
+        emojiPanel.style.maxWidth = '320px';
+        emojiPanel.style.padding = '10px';
+
+        emojiList.forEach(e => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'emoji-btn';
+            btn.style.fontSize = '18px';
+            btn.style.width = '28px';
+            btn.style.height = '28px';
+            btn.style.border = 'none';
+            btn.style.background = 'transparent';
+            btn.style.cursor = 'pointer';
+            btn.textContent = e;
+            btn.addEventListener('click', (ev) => {
+                ev.stopPropagation();
+                insertEmoji(e);
+                hideEmojiPanel();
+            });
+            emojiPanel.appendChild(btn);
+        });
+
+        document.body.appendChild(emojiPanel);
+
+        // close on outside click
+        document.addEventListener('click', (ev) => {
+            if (!emojiPanel) return;
+            if (ev.target === emojiBtn || emojiBtn.contains(ev.target)) return;
+            if (!emojiPanel.contains(ev.target)) hideEmojiPanel();
+        });
+    }
+
+    function showEmojiPanel(){
+        createEmojiPanel();
+        const rect = emojiBtn.getBoundingClientRect();
+        emojiPanel.style.top = (window.scrollY + rect.bottom + 6) + 'px';
+        emojiPanel.style.left = Math.max(8, (window.scrollX + rect.left)) + 'px';
+        emojiPanel.style.display = 'grid';
+    }
+
+    function hideEmojiPanel(){
+        if (!emojiPanel) return;
+        emojiPanel.style.display = 'none';
+    }
+
+    function insertEmoji(e){
+        // if editor available, insert as HTML fragment
+        if (convEditorInstance) {
+            try {
+                const viewFragment = convEditorInstance.data.processor.toView(e);
+                const modelFragment = convEditorInstance.data.toModel(viewFragment);
+                convEditorInstance.model.change( writer => {
+                    convEditorInstance.model.insertContent(modelFragment, convEditorInstance.model.document.selection);
+                });
+                convEditorInstance.editing.view.focus();
+                return;
+            } catch (err){ console.warn('Emoji insert to CKEditor failed', err); }
+        }
+        // fallback: insert at textarea caret or append
+        if (convInput) {
+            const start = convInput.selectionStart || convInput.value.length;
+            const val = convInput.value || '';
+            convInput.value = val.slice(0,start) + e + val.slice(start);
+            convInput.focus();
+            convInput.selectionStart = convInput.selectionEnd = start + e.length;
+        }
+    }
+
+    if (emojiBtn) {
+        emojiBtn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            createEmojiPanel();
+            // toggle
+            if (emojiPanel && emojiPanel.style.display !== 'none') {
+                if (emojiPanel.style.display === 'grid') { hideEmojiPanel(); return; }
+            }
+            showEmojiPanel();
+        });
+    }
+    // --- end emoji picker ---------------------------------------------
+
+    // enviar mensagem (usa HTML do editor quando disponível)
+    convSend && convSend.addEventListener('click', () => {
+        const socket = window.appWebSocket;
+        if (!socket || socket.readyState !== WebSocket.OPEN) { alert('Sem conexão WS'); return; }
+        const html = convEditorInstance ? convEditorInstance.getData() : (convInput.value || '').trim();
+        const text = (function(h){ try { const tmp=document.createElement('div'); tmp.innerHTML = h; return tmp.textContent.trim(); } catch(e){ return (h||'').trim(); } })(html);
+        if (!text || !window.currentConversation) return;
+        socket.send(JSON.stringify({ type: 'chat', conversation_id: window.currentConversation, text: text, html: html }));
+        if (convEditorInstance) convEditorInstance.setData('');
+        else convInput.value = '';
+    });
+
+    // Enter para enviar (mantém shift+Enter para quebra)
+    if (convEditorEl) {
+        convEditorEl.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); convSend.click(); }
+        });
+    }
+
+    // "Chamar Atenção" (wizz) — envia evento ao servidor; servidor deve retransmitir
+    wizzBtn && wizzBtn.addEventListener('click', () => {
+        const socket = window.appWebSocket;
+        if (!socket || socket.readyState !== WebSocket.OPEN) { alert('Sem conexão WS'); return; }
+        if (!window.currentConversation) { alert('Abra uma conversa primeiro'); return; }
+        socket.send(JSON.stringify({ type: 'wizz', conversation_id: window.currentConversation }));
+    });
+
+    // tratar wizz recebido (pequena animação + notificação)
+    function handleWizz(fromUserId) {
+        const panel = document.querySelector('.conversation-panel');
+        if (!panel) return;
+        panel.classList.remove('conv-wizz');
+        void panel.offsetWidth; // restart animation
+        panel.classList.add('conv-wizz');
+        // optional sound (coloque sounds/wizz.mp3 no servidor)
+        try {
+            if (typeof Audio !== 'undefined') {
+                const a = new Audio('sounds/wizz.mp3');
+                a.play().catch(()=>{});
+            }
+        } catch(e){}
+        showNotification('Chamar atenção', `Usuário ${fromUserId} te chamou a atenção`);
+    }
+	window.handleWizz = handleWizz;
+    // integracao no handleMessage (certifique-se de chamar handleWizz quando ws enviar {type:'wizz'})
+    // exemplo: inside handleMessage():
+    //if (data.type === 'wizz') { handleWizz(data.from || data.from_id); return; }
+
+    // IMPORTANT: servidor deve sanitizar html antes de salvar/exibir para evitar XSS.
 })();
