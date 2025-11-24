@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>WS Test Client</title>
+<style>body{font-family:Arial;padding:16px} textarea{width:100%;height:120px} #log{white-space:pre-wrap;background:#f6f8fb;padding:8px;border:1px solid #d7e4f6;height:220px;overflow:auto}</style>
+</head>
+<body>
+<h2>WebSocket test client</h2>
+<div>
+  <label>Servidor: <strong id="srv">ws://localhost:8087</strong></label>
+</div>
+<div style="margin-top:8px;">
+  <input id="msg" type="text" placeholder="mensagem..." style="width:80%" />
+  <button id="send">Enviar</button>
+</div>
+<h3>Log</h3>
+<div id="log">(aguardando...)</div>
+
+<script>
+(function(){
+  const host = location.hostname || 'localhost';
+  const url = 'ws://' + host + ':8087';
+  document.getElementById('srv').textContent = url;
+  const logEl = document.getElementById('log');
+  function addLog(txt){ logEl.textContent = (new Date()).toLocaleTimeString() + ' — ' + txt + '\n' + logEl.textContent; }
+
+  let ws;
+  try {
+    ws = new WebSocket(url);
+  } catch (e) {
+    addLog('Falha ao criar WebSocket: ' + e.message);
+    return;
+  }
+
+  ws.onopen = () => {
+    addLog('OPEN');
+    // envia mensagem de teste (JSON)
+    const test = { type: 'chat', text: 'Olá do cliente de teste' };
+    ws.send(JSON.stringify(test));
+    addLog('ENVIADO (JSON): ' + JSON.stringify(test));
+  };
+
+  ws.onmessage = (ev) => {
+    addLog('RECEBIDO: ' + ev.data);
+    console.log('WS msg', ev.data);
+  };
+
+  ws.onclose = () => addLog('CLOSED');
+  ws.onerror = (err) => addLog('ERROR (veja console): ' + (err.message || JSON.stringify(err)));
+
+  document.getElementById('send').addEventListener('click', () => {
+    const m = document.getElementById('msg').value || 'ping';
+    try {
+      ws.send(m);
+      addLog('ENVIADO (raw): ' + m);
+    } catch (e) {
+      addLog('ERRO ao enviar: ' + e.message);
+    }
+  });
+})();
+</script>
+</body>
+</html>

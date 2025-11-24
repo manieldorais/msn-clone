@@ -1,0 +1,1006 @@
+[2025-11-24 15:01:49] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:01:49] Chat server constructed
+[2025-11-24 15:01:49] WebSocket server started on port 8087
+[2025-11-24 15:03:42] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:03:42] Chat server constructed
+[2025-11-24 15:03:42] WebSocket server started on port 8087
+[2025-11-24 15:04:56] New connection (64)
+[2025-11-24 15:04:56] Received 49 bytes from 64 — broadcasting to 0 other(s)
+[2025-11-24 15:05:02] Connection 64 has disconnected
+[2025-11-24 15:05:02] New connection (89)
+[2025-11-24 15:05:02] Received 49 bytes from 89 — broadcasting to 0 other(s)
+[2025-11-24 15:05:21] Received 3 bytes from 89 — broadcasting to 0 other(s)
+[2025-11-24 15:06:07] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:06:07] Chat server constructed
+[2025-11-24 15:06:07] WebSocket server started on port 8087
+[2025-11-24 15:06:11] New connection (53)
+[2025-11-24 15:06:11] Welcome sent to 53
+[2025-11-24 15:06:11] Received 49 bytes from 53 — broadcasting to 0 other(s)
+[2025-11-24 15:06:20] Received 5 bytes from 53 — broadcasting to 0 other(s)
+[2025-11-24 15:07:38] Connection 53 has disconnected
+[2025-11-24 15:07:38] New connection (90)
+[2025-11-24 15:07:38] Welcome sent to 90
+[2025-11-24 15:07:38] Received 49 bytes from 90 — broadcasting to 0 other(s)
+[2025-11-24 15:07:43] Received 3 bytes from 90 — broadcasting to 0 other(s)
+[2025-11-24 15:07:47] New connection (97)
+[2025-11-24 15:07:47] Welcome sent to 97
+[2025-11-24 15:07:47] Received 49 bytes from 97 — broadcasting to 1 other(s)
+[2025-11-24 15:07:54] Received 6 bytes from 97 — broadcasting to 1 other(s)
+[2025-11-24 15:08:08] Connection 97 has disconnected
+[2025-11-24 15:08:14] Connection 90 has disconnected
+[2025-11-24 15:23:16] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:23:16] DB connected
+[2025-11-24 15:23:16] Chat server constructed
+[2025-11-24 15:23:16] WebSocket server started on port 8087
+[2025-11-24 15:23:25] New connection (55)
+[2025-11-24 15:23:25] Welcome sent to 55
+[2025-11-24 15:23:39] Received 50 bytes from 55 — broadcasting to 0 other(s)
+[2025-11-24 15:24:06] Received 84 bytes from 55 — broadcasting to 0 other(s)
+[2025-11-24 15:25:11] Received 67 bytes from 55 — broadcasting to 0 other(s)
+[2025-11-24 15:25:11] User logged in: 1 (conn 55)
+[2025-11-24 15:25:11] Connection 55 has disconnected
+[2025-11-24 15:28:35] New connection (94)
+[2025-11-24 15:28:35] Welcome sent to 94
+[2025-11-24 15:28:35] Received 76 bytes from 94 — broadcasting to 0 other(s)
+[2025-11-24 15:28:59] Connection 94 has disconnected
+[2025-11-24 15:28:59] New connection (101)
+[2025-11-24 15:28:59] Welcome sent to 101
+[2025-11-24 15:28:59] Received 76 bytes from 101 — broadcasting to 0 other(s)
+[2025-11-24 15:29:03] Connection 101 has disconnected
+[2025-11-24 15:29:03] New connection (108)
+[2025-11-24 15:29:03] Welcome sent to 108
+[2025-11-24 15:29:03] Received 76 bytes from 108 — broadcasting to 0 other(s)
+[2025-11-24 15:29:10] Received 34 bytes from 108 — broadcasting to 0 other(s)
+[2025-11-24 15:29:13] Connection 108 has disconnected
+[2025-11-24 15:29:13] New connection (116)
+[2025-11-24 15:29:13] Welcome sent to 116
+[2025-11-24 15:29:13] Received 76 bytes from 116 — broadcasting to 0 other(s)
+[2025-11-24 15:29:27] Received 34 bytes from 116 — broadcasting to 0 other(s)
+[2025-11-24 15:29:37] Connection 116 has disconnected
+[2025-11-24 15:29:39] New connection (124)
+[2025-11-24 15:29:39] Welcome sent to 124
+[2025-11-24 15:29:52] Received 71 bytes from 124 — broadcasting to 0 other(s)
+[2025-11-24 15:29:52] User registered: 7 (daniel)
+[2025-11-24 15:29:59] Received 50 bytes from 124 — broadcasting to 0 other(s)
+[2025-11-24 15:29:59] User logged in: 7 (conn 124)
+[2025-11-24 15:29:59] Connection 124 has disconnected
+[2025-11-24 15:29:59] New connection (134)
+[2025-11-24 15:29:59] Welcome sent to 134
+[2025-11-24 15:29:59] Received 76 bytes from 134 — broadcasting to 0 other(s)
+[2025-11-24 15:32:00] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:32:00] DB connected
+[2025-11-24 15:32:00] Chat server constructed
+[2025-11-24 15:32:00] WebSocket server started on port 8087
+[2025-11-24 15:32:00] New connection (55)
+[2025-11-24 15:32:00] Welcome sent to 55
+[2025-11-24 15:32:00] Received 76 bytes from 55
+[2025-11-24 15:32:00] Received 23 bytes from 55
+[2025-11-24 15:32:00] Received 28 bytes from 55
+[2025-11-24 15:32:03] Connection 55 has disconnected
+[2025-11-24 15:32:04] New connection (93)
+[2025-11-24 15:32:04] Welcome sent to 93
+[2025-11-24 15:32:04] Received 76 bytes from 93
+[2025-11-24 15:32:04] Received 23 bytes from 93
+[2025-11-24 15:32:04] Received 28 bytes from 93
+[2025-11-24 15:32:05] Connection 93 has disconnected
+[2025-11-24 15:32:05] New connection (102)
+[2025-11-24 15:32:05] Welcome sent to 102
+[2025-11-24 15:32:05] Received 76 bytes from 102
+[2025-11-24 15:32:05] Received 23 bytes from 102
+[2025-11-24 15:32:05] Received 28 bytes from 102
+[2025-11-24 15:32:09] Connection 102 has disconnected
+[2025-11-24 15:32:12] New connection (111)
+[2025-11-24 15:32:12] Welcome sent to 111
+[2025-11-24 15:32:16] Received 51 bytes from 111
+[2025-11-24 15:32:19] Received 50 bytes from 111
+[2025-11-24 15:32:19] User logged in: 7 (conn 111)
+[2025-11-24 15:32:19] Connection 111 has disconnected
+[2025-11-24 15:32:19] New connection (120)
+[2025-11-24 15:32:19] Welcome sent to 120
+[2025-11-24 15:32:19] Received 76 bytes from 120
+[2025-11-24 15:32:19] Received 23 bytes from 120
+[2025-11-24 15:32:19] Received 28 bytes from 120
+[2025-11-24 15:35:38] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:35:38] DB connected
+[2025-11-24 15:35:38] Chat server constructed
+[2025-11-24 15:35:38] WebSocket server started on port 8087
+[2025-11-24 15:35:39] New connection (55)
+[2025-11-24 15:35:39] Welcome sent to 55
+[2025-11-24 15:35:39] Received 76 bytes from 55
+[2025-11-24 15:35:39] Received 23 bytes from 55
+[2025-11-24 15:35:39] Received 28 bytes from 55
+[2025-11-24 15:35:41] Connection 55 has disconnected
+[2025-11-24 15:35:46] New connection (93)
+[2025-11-24 15:35:46] Welcome sent to 93
+[2025-11-24 15:35:51] Received 50 bytes from 93
+[2025-11-24 15:35:51] User logged in: 7 (conn 93)
+[2025-11-24 15:35:51] Connection 93 has disconnected
+[2025-11-24 15:38:13] New connection (101)
+[2025-11-24 15:38:13] Welcome sent to 101
+[2025-11-24 15:38:15] Received 76 bytes from 101
+[2025-11-24 15:38:15] Received 23 bytes from 101
+[2025-11-24 15:38:15] Received 28 bytes from 101
+[2025-11-24 15:38:15] Received 30 bytes from 101
+[2025-11-24 15:41:39] Connection 101 has disconnected
+[2025-11-24 15:41:46] New connection (111)
+[2025-11-24 15:41:46] Welcome sent to 111
+[2025-11-24 15:41:51] Received 50 bytes from 111
+[2025-11-24 15:41:51] User logged in: 7 (conn 111)
+[2025-11-24 15:41:51] Connection 111 has disconnected
+[2025-11-24 15:44:22] New connection (119)
+[2025-11-24 15:44:22] Welcome sent to 119
+[2025-11-24 15:44:27] Received 47 bytes from 119
+[2025-11-24 15:44:42] Received 65 bytes from 119
+[2025-11-24 15:44:42] User registered: 8 (ana)
+[2025-11-24 15:44:45] Received 47 bytes from 119
+[2025-11-24 15:44:45] User logged in: 8 (conn 119)
+[2025-11-24 15:44:45] Connection 119 has disconnected
+[2025-11-24 15:45:05] New connection (130)
+[2025-11-24 15:45:05] Welcome sent to 130
+[2025-11-24 15:45:08] Received 50 bytes from 130
+[2025-11-24 15:45:08] User logged in: 7 (conn 130)
+[2025-11-24 15:45:08] Connection 130 has disconnected
+[2025-11-24 15:45:35] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:45:35] DB connected
+[2025-11-24 15:45:35] Chat server constructed
+[2025-11-24 15:45:35] WebSocket server started on port 8087
+[2025-11-24 15:45:48] New connection (55)
+[2025-11-24 15:45:48] Welcome sent to 55
+[2025-11-24 15:45:51] Received 47 bytes from 55
+[2025-11-24 15:45:51] User logged in: 8 (conn 55)
+[2025-11-24 15:45:51] Connection 55 has disconnected
+[2025-11-24 15:45:54] New connection (92)
+[2025-11-24 15:45:54] Welcome sent to 92
+[2025-11-24 15:45:59] Received 50 bytes from 92
+[2025-11-24 15:45:59] User logged in: 7 (conn 92)
+[2025-11-24 15:45:59] Connection 92 has disconnected
+[2025-11-24 15:50:26] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:50:27] DB connected
+[2025-11-24 15:50:27] Chat server constructed
+[2025-11-24 15:50:27] WebSocket server started on port 8087
+[2025-11-24 15:50:28] New connection (55)
+[2025-11-24 15:50:28] Welcome sent to 55
+[2025-11-24 15:50:32] Received 47 bytes from 55
+[2025-11-24 15:50:32] User logged in: 8 (conn 55)
+[2025-11-24 15:50:32] Connection 55 has disconnected
+[2025-11-24 15:50:44] New connection (92)
+[2025-11-24 15:50:44] Welcome sent to 92
+[2025-11-24 15:50:48] Received 50 bytes from 92
+[2025-11-24 15:50:48] User logged in: 7 (conn 92)
+[2025-11-24 15:50:48] Connection 92 has disconnected
+[2025-11-24 15:52:34] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:52:34] DB connected
+[2025-11-24 15:52:34] Chat server constructed
+[2025-11-24 15:52:34] WebSocket server started on port 8087
+[2025-11-24 15:52:35] New connection (55)
+[2025-11-24 15:52:35] Welcome sent to 55
+[2025-11-24 15:52:36] Connection 55 has disconnected
+[2025-11-24 15:52:36] New connection (90)
+[2025-11-24 15:52:36] Welcome sent to 90
+[2025-11-24 15:52:39] Received 47 bytes from 90
+[2025-11-24 15:52:39] User logged in: 8 (conn 90)
+[2025-11-24 15:52:40] Connection 90 has disconnected
+[2025-11-24 15:52:46] New connection (98)
+[2025-11-24 15:52:46] Welcome sent to 98
+[2025-11-24 15:52:47] Connection 98 has disconnected
+[2025-11-24 15:52:47] New connection (104)
+[2025-11-24 15:52:47] Welcome sent to 104
+[2025-11-24 15:52:50] Received 50 bytes from 104
+[2025-11-24 15:52:50] User logged in: 7 (conn 104)
+[2025-11-24 15:52:50] Connection 104 has disconnected
+[2025-11-24 15:55:37] New connection (112)
+[2025-11-24 15:55:37] Welcome sent to 112
+[2025-11-24 15:55:41] Received 47 bytes from 112
+[2025-11-24 15:55:41] User logged in: 8 (conn 112)
+[2025-11-24 15:55:41] Connection 112 has disconnected
+[2025-11-24 15:55:48] New connection (120)
+[2025-11-24 15:55:48] Welcome sent to 120
+[2025-11-24 15:55:54] Received 50 bytes from 120
+[2025-11-24 15:55:54] User logged in: 7 (conn 120)
+[2025-11-24 15:55:54] Connection 120 has disconnected
+[2025-11-24 15:58:23] Bootstrap start: PHP 8.3.6
+[2025-11-24 15:58:23] DB connected
+[2025-11-24 15:58:23] Chat server constructed
+[2025-11-24 15:58:23] WebSocket server started on port 8087
+[2025-11-24 15:58:28] New connection (55)
+[2025-11-24 15:58:28] Welcome sent to 55
+[2025-11-24 15:58:32] Received 47 bytes from 55
+[2025-11-24 15:58:32] User logged in: 8 (conn 55)
+[2025-11-24 15:58:32] Connection 55 has disconnected
+[2025-11-24 15:58:39] New connection (92)
+[2025-11-24 15:58:39] Welcome sent to 92
+[2025-11-24 15:58:43] Received 50 bytes from 92
+[2025-11-24 15:58:43] User logged in: 7 (conn 92)
+[2025-11-24 15:58:43] Connection 92 has disconnected
+[2025-11-24 15:59:51] New connection (100)
+[2025-11-24 15:59:51] Welcome sent to 100
+[2025-11-24 15:59:53] Connection 100 has disconnected
+[2025-11-24 15:59:53] New connection (106)
+[2025-11-24 15:59:53] Welcome sent to 106
+[2025-11-24 15:59:54] Connection 106 has disconnected
+[2025-11-24 15:59:55] New connection (112)
+[2025-11-24 15:59:55] Welcome sent to 112
+[2025-11-24 15:59:59] Received 47 bytes from 112
+[2025-11-24 15:59:59] User logged in: 8 (conn 112)
+[2025-11-24 15:59:59] Connection 112 has disconnected
+[2025-11-24 16:01:45] New connection (120)
+[2025-11-24 16:01:45] Welcome sent to 120
+[2025-11-24 16:01:49] Received 47 bytes from 120
+[2025-11-24 16:01:49] User logged in: 8 (conn 120)
+[2025-11-24 16:01:49] Connection 120 has disconnected
+[2025-11-24 16:01:49] New connection (128)
+[2025-11-24 16:01:49] Welcome sent to 128
+[2025-11-24 16:01:51] Received 76 bytes from 128
+[2025-11-24 16:01:55] Received 51 bytes from 128
+[2025-11-24 16:01:56] Received 30 bytes from 128
+[2025-11-24 16:02:02] Connection 128 has disconnected
+[2025-11-24 16:02:02] New connection (137)
+[2025-11-24 16:02:02] Welcome sent to 137
+[2025-11-24 16:02:03] Received 76 bytes from 137
+[2025-11-24 16:02:05] New connection (143)
+[2025-11-24 16:02:05] Welcome sent to 143
+[2025-11-24 16:02:07] Received 76 bytes from 143
+[2025-11-24 16:02:10] Connection 143 has disconnected
+[2025-11-24 16:02:12] New connection (150)
+[2025-11-24 16:02:12] Welcome sent to 150
+[2025-11-24 16:02:15] Received 50 bytes from 150
+[2025-11-24 16:02:16] User logged in: 7 (conn 150)
+[2025-11-24 16:02:16] Connection 150 has disconnected
+[2025-11-24 16:02:16] New connection (158)
+[2025-11-24 16:02:16] Welcome sent to 158
+[2025-11-24 16:02:17] Received 76 bytes from 158
+[2025-11-24 16:02:18] Connection 158 has disconnected
+[2025-11-24 16:02:18] New connection (165)
+[2025-11-24 16:02:18] Welcome sent to 165
+[2025-11-24 16:02:19] Connection 165 has disconnected
+[2025-11-24 16:02:19] New connection (171)
+[2025-11-24 16:02:19] Welcome sent to 171
+[2025-11-24 16:02:20] Received 76 bytes from 171
+[2025-11-24 16:02:36] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:02:36] DB connected
+[2025-11-24 16:02:36] Chat server constructed
+[2025-11-24 16:02:36] WebSocket server started on port 8087
+[2025-11-24 16:02:37] New connection (55)
+[2025-11-24 16:02:37] Welcome sent to 55
+[2025-11-24 16:02:37] New connection (66)
+[2025-11-24 16:02:37] Welcome sent to 66
+[2025-11-24 16:02:38] Received 76 bytes from 66
+[2025-11-24 16:02:38] Connection 66 has disconnected
+[2025-11-24 16:02:39] New connection (96)
+[2025-11-24 16:02:39] Welcome sent to 96
+[2025-11-24 16:02:40] Received 76 bytes from 96
+[2025-11-24 16:02:42] Received 76 bytes from 55
+[2025-11-24 16:02:43] Connection 55 has disconnected
+[2025-11-24 16:02:43] New connection (104)
+[2025-11-24 16:02:43] Welcome sent to 104
+[2025-11-24 16:02:44] Received 76 bytes from 104
+[2025-11-24 16:05:12] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:05:12] DB connected
+[2025-11-24 16:05:12] Chat server constructed
+[2025-11-24 16:05:12] WebSocket server started on port 8087
+[2025-11-24 16:05:13] New connection (55)
+[2025-11-24 16:05:13] Welcome sent to 55
+[2025-11-24 16:05:17] Received 47 bytes from 55
+[2025-11-24 16:05:17] User logged in: 8 (conn 55)
+[2025-11-24 16:05:17] Connection 55 has disconnected
+[2025-11-24 16:05:17] New connection (92)
+[2025-11-24 16:05:17] Welcome sent to 92
+[2025-11-24 16:05:18] Received 76 bytes from 92
+[2025-11-24 16:05:21] Connection 92 has disconnected
+[2025-11-24 16:05:21] New connection (99)
+[2025-11-24 16:05:21] Welcome sent to 99
+[2025-11-24 16:05:22] Received 76 bytes from 99
+[2025-11-24 16:05:23] New connection (105)
+[2025-11-24 16:05:23] Welcome sent to 105
+[2025-11-24 16:05:27] Received 50 bytes from 105
+[2025-11-24 16:05:27] User logged in: 7 (conn 105)
+[2025-11-24 16:05:27] Connection 105 has disconnected
+[2025-11-24 16:05:27] New connection (113)
+[2025-11-24 16:05:27] Welcome sent to 113
+[2025-11-24 16:05:29] Received 76 bytes from 113
+[2025-11-24 16:05:32] Connection 113 has disconnected
+[2025-11-24 16:05:32] New connection (120)
+[2025-11-24 16:05:32] Welcome sent to 120
+[2025-11-24 16:05:35] Connection 120 has disconnected
+[2025-11-24 16:05:35] New connection (126)
+[2025-11-24 16:05:35] Welcome sent to 126
+[2025-11-24 16:05:36] Received 76 bytes from 126
+[2025-11-24 16:06:02] Received 51 bytes from 99
+[2025-11-24 16:06:02] Friend request 2 from 8 to 7
+[2025-11-24 16:06:02] Received 30 bytes from 126
+[2025-11-24 16:06:04] Received 30 bytes from 99
+[2025-11-24 16:07:17] Connection 99 has disconnected
+[2025-11-24 16:07:17] New connection (137)
+[2025-11-24 16:07:17] Welcome sent to 137
+[2025-11-24 16:07:18] Received 76 bytes from 137
+[2025-11-24 16:07:21] Connection 126 has disconnected
+[2025-11-24 16:07:21] New connection (144)
+[2025-11-24 16:07:21] Welcome sent to 144
+[2025-11-24 16:07:22] Received 76 bytes from 144
+[2025-11-24 16:07:40] Received 51 bytes from 137
+[2025-11-24 16:07:40] Friend request 3 from 8 to 7
+[2025-11-24 16:07:40] Received 30 bytes from 144
+[2025-11-24 16:07:44] Received 30 bytes from 137
+[2025-11-24 16:07:48] Connection 144 has disconnected
+[2025-11-24 16:07:48] New connection (155)
+[2025-11-24 16:07:48] Welcome sent to 155
+[2025-11-24 16:07:49] Received 76 bytes from 155
+[2025-11-24 16:07:51] Connection 137 has disconnected
+[2025-11-24 16:07:52] New connection (162)
+[2025-11-24 16:07:52] Welcome sent to 162
+[2025-11-24 16:07:53] Received 76 bytes from 162
+[2025-11-24 16:09:25] Connection 162 has disconnected
+[2025-11-24 16:09:25] New connection (169)
+[2025-11-24 16:09:25] Welcome sent to 169
+[2025-11-24 16:09:26] Connection 169 has disconnected
+[2025-11-24 16:09:26] New connection (175)
+[2025-11-24 16:09:26] Welcome sent to 175
+[2025-11-24 16:09:29] Received 76 bytes from 175
+[2025-11-24 16:09:44] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:09:44] DB connected
+[2025-11-24 16:09:44] Chat server constructed
+[2025-11-24 16:09:44] WebSocket server started on port 8087
+[2025-11-24 16:09:46] New connection (55)
+[2025-11-24 16:09:46] Welcome sent to 55
+[2025-11-24 16:09:50] Received 47 bytes from 55
+[2025-11-24 16:09:50] User logged in: 8 (conn 55)
+[2025-11-24 16:09:50] Connection 55 has disconnected
+[2025-11-24 16:09:50] New connection (92)
+[2025-11-24 16:09:50] Welcome sent to 92
+[2025-11-24 16:09:52] Received 76 bytes from 92
+[2025-11-24 16:09:53] New connection (98)
+[2025-11-24 16:09:53] Welcome sent to 98
+[2025-11-24 16:09:57] Received 50 bytes from 98
+[2025-11-24 16:09:57] User logged in: 7 (conn 98)
+[2025-11-24 16:09:57] Connection 98 has disconnected
+[2025-11-24 16:09:57] New connection (106)
+[2025-11-24 16:09:57] Welcome sent to 106
+[2025-11-24 16:09:59] Received 76 bytes from 106
+[2025-11-24 16:09:59] Connection 106 has disconnected
+[2025-11-24 16:10:00] New connection (113)
+[2025-11-24 16:10:00] Welcome sent to 113
+[2025-11-24 16:10:01] Received 76 bytes from 113
+[2025-11-24 16:10:05] Connection 113 has disconnected
+[2025-11-24 16:10:05] New connection (120)
+[2025-11-24 16:10:05] Welcome sent to 120
+[2025-11-24 16:10:06] Received 76 bytes from 120
+[2025-11-24 16:10:09] Connection 92 has disconnected
+[2025-11-24 16:10:09] New connection (127)
+[2025-11-24 16:10:09] Welcome sent to 127
+[2025-11-24 16:10:11] Received 76 bytes from 127
+[2025-11-24 16:10:12] Connection 120 has disconnected
+[2025-11-24 16:10:13] New connection (134)
+[2025-11-24 16:10:13] Welcome sent to 134
+[2025-11-24 16:10:14] Received 76 bytes from 134
+[2025-11-24 16:10:51] Connection 134 has disconnected
+[2025-11-24 16:10:51] New connection (141)
+[2025-11-24 16:10:51] Welcome sent to 141
+[2025-11-24 16:10:52] Received 76 bytes from 141
+[2025-11-24 16:11:45] Connection 127 has disconnected
+[2025-11-24 16:11:50] Connection 141 has disconnected
+[2025-11-24 16:11:55] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:11:55] DB connected
+[2025-11-24 16:11:55] Chat server constructed
+[2025-11-24 16:11:55] WebSocket server started on port 8087
+[2025-11-24 16:11:57] New connection (55)
+[2025-11-24 16:11:57] Welcome sent to 55
+[2025-11-24 16:12:01] Received 47 bytes from 55
+[2025-11-24 16:12:01] User logged in: 8 (conn 55)
+[2025-11-24 16:12:01] Connection 55 has disconnected
+[2025-11-24 16:12:01] New connection (92)
+[2025-11-24 16:12:01] Welcome sent to 92
+[2025-11-24 16:12:03] Received 76 bytes from 92
+[2025-11-24 16:12:04] New connection (98)
+[2025-11-24 16:12:04] Welcome sent to 98
+[2025-11-24 16:12:08] Received 50 bytes from 98
+[2025-11-24 16:12:09] User logged in: 7 (conn 98)
+[2025-11-24 16:12:09] Connection 98 has disconnected
+[2025-11-24 16:12:09] New connection (106)
+[2025-11-24 16:12:09] Welcome sent to 106
+[2025-11-24 16:12:10] Received 76 bytes from 106
+[2025-11-24 16:12:15] Received 51 bytes from 92
+[2025-11-24 16:12:15] Friend request 4 from 8 to 7
+[2025-11-24 16:12:15] Received 30 bytes from 106
+[2025-11-24 16:12:17] Received 30 bytes from 92
+[2025-11-24 16:12:24] Connection 92 has disconnected
+[2025-11-24 16:12:24] New connection (117)
+[2025-11-24 16:12:24] Welcome sent to 117
+[2025-11-24 16:12:26] Received 76 bytes from 117
+[2025-11-24 16:12:27] Connection 117 has disconnected
+[2025-11-24 16:12:27] New connection (124)
+[2025-11-24 16:12:27] Welcome sent to 124
+[2025-11-24 16:12:29] Received 76 bytes from 124
+[2025-11-24 16:12:29] Connection 106 has disconnected
+[2025-11-24 16:12:29] New connection (131)
+[2025-11-24 16:12:29] Welcome sent to 131
+[2025-11-24 16:12:30] Received 76 bytes from 131
+[2025-11-24 16:14:40] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:14:40] DB connected
+[2025-11-24 16:14:40] Chat server constructed
+[2025-11-24 16:14:40] WebSocket server started on port 8087
+[2025-11-24 16:14:41] New connection (55)
+[2025-11-24 16:14:41] Welcome sent to 55
+[2025-11-24 16:14:41] New connection (66)
+[2025-11-24 16:14:41] Welcome sent to 66
+[2025-11-24 16:14:42] Received 76 bytes from 66
+[2025-11-24 16:14:43] Connection 66 has disconnected
+[2025-11-24 16:14:43] New connection (96)
+[2025-11-24 16:14:43] Welcome sent to 96
+[2025-11-24 16:14:45] Received 76 bytes from 96
+[2025-11-24 16:14:47] Received 76 bytes from 55
+[2025-11-24 16:14:48] Connection 55 has disconnected
+[2025-11-24 16:14:48] New connection (104)
+[2025-11-24 16:14:48] Welcome sent to 104
+[2025-11-24 16:14:50] Received 76 bytes from 104
+[2025-11-24 16:15:01] Connection 104 has disconnected
+[2025-11-24 16:15:01] New connection (111)
+[2025-11-24 16:15:01] Welcome sent to 111
+[2025-11-24 16:15:02] Received 76 bytes from 111
+[2025-11-24 16:15:22] Connection 111 has disconnected
+[2025-11-24 16:15:22] New connection (118)
+[2025-11-24 16:15:22] Welcome sent to 118
+[2025-11-24 16:15:24] Received 76 bytes from 118
+[2025-11-24 16:15:30] Connection 118 has disconnected
+[2025-11-24 16:15:30] New connection (125)
+[2025-11-24 16:15:30] Welcome sent to 125
+[2025-11-24 16:15:31] Received 76 bytes from 125
+[2025-11-24 16:18:52] Connection 125 has disconnected
+[2025-11-24 16:18:52] New connection (132)
+[2025-11-24 16:18:52] Welcome sent to 132
+[2025-11-24 16:18:54] Received 76 bytes from 132
+[2025-11-24 16:18:55] Connection 96 has disconnected
+[2025-11-24 16:18:55] New connection (139)
+[2025-11-24 16:18:55] Welcome sent to 139
+[2025-11-24 16:18:57] Received 76 bytes from 139
+[2025-11-24 16:18:58] Received 39 bytes from 132
+[2025-11-24 16:18:58] Friend request 4 accepted by 7; contacts ensured with 8
+[2025-11-24 16:19:02] Connection 132 has disconnected
+[2025-11-24 16:19:02] New connection (148)
+[2025-11-24 16:19:02] Welcome sent to 148
+[2025-11-24 16:19:03] Received 76 bytes from 148
+[2025-11-24 16:19:06] Connection 139 has disconnected
+[2025-11-24 16:19:07] New connection (155)
+[2025-11-24 16:19:07] Welcome sent to 155
+[2025-11-24 16:19:08] Received 76 bytes from 155
+[2025-11-24 16:21:33] Connection 148 has disconnected
+[2025-11-24 16:21:33] New connection (162)
+[2025-11-24 16:21:33] Welcome sent to 162
+[2025-11-24 16:21:35] Received 76 bytes from 162
+[2025-11-24 16:24:21] Connection 162 has disconnected
+[2025-11-24 16:24:22] New connection (169)
+[2025-11-24 16:24:22] Welcome sent to 169
+[2025-11-24 16:24:23] Received 76 bytes from 169
+[2025-11-24 16:24:23] Received 23 bytes from 169
+[2025-11-24 16:24:23] Received 28 bytes from 169
+[2025-11-24 16:24:23] Received 30 bytes from 169
+[2025-11-24 16:24:25] Connection 155 has disconnected
+[2025-11-24 16:24:25] New connection (179)
+[2025-11-24 16:24:25] Welcome sent to 179
+[2025-11-24 16:24:27] Received 76 bytes from 179
+[2025-11-24 16:24:27] Received 23 bytes from 179
+[2025-11-24 16:24:27] Received 28 bytes from 179
+[2025-11-24 16:24:27] Received 30 bytes from 179
+[2025-11-24 16:24:28] Received 45 bytes from 179
+[2025-11-24 16:24:34] Received 34 bytes from 179
+[2025-11-24 16:24:37] Received 45 bytes from 169
+[2025-11-24 16:26:50] Connection 179 has disconnected
+[2025-11-24 16:26:50] New connection (192)
+[2025-11-24 16:26:50] Welcome sent to 192
+[2025-11-24 16:26:52] Received 76 bytes from 192
+[2025-11-24 16:26:52] Received 23 bytes from 192
+[2025-11-24 16:26:52] Received 28 bytes from 192
+[2025-11-24 16:26:52] Received 30 bytes from 192
+[2025-11-24 16:26:53] Received 45 bytes from 192
+[2025-11-24 16:26:53] Received 43 bytes from 192
+[2025-11-24 16:26:59] Connection 192 has disconnected
+[2025-11-24 16:26:59] New connection (204)
+[2025-11-24 16:26:59] Welcome sent to 204
+[2025-11-24 16:27:00] Received 76 bytes from 204
+[2025-11-24 16:27:00] Received 23 bytes from 204
+[2025-11-24 16:27:00] Received 28 bytes from 204
+[2025-11-24 16:27:00] Received 30 bytes from 204
+[2025-11-24 16:27:01] Received 45 bytes from 204
+[2025-11-24 16:27:01] Received 43 bytes from 204
+[2025-11-24 16:28:20] Connection 204 has disconnected
+[2025-11-24 16:30:21] New connection (216)
+[2025-11-24 16:30:21] Welcome sent to 216
+[2025-11-24 16:30:22] Received 76 bytes from 216
+[2025-11-24 16:30:22] Received 23 bytes from 216
+[2025-11-24 16:30:22] Received 28 bytes from 216
+[2025-11-24 16:30:22] Received 30 bytes from 216
+[2025-11-24 16:30:24] Received 45 bytes from 216
+[2025-11-24 16:30:24] Received 45 bytes from 216
+[2025-11-24 16:30:24] Received 43 bytes from 216
+[2025-11-24 16:30:24] Received 43 bytes from 216
+[2025-11-24 16:31:37] Connection 216 has disconnected
+[2025-11-24 16:31:37] New connection (230)
+[2025-11-24 16:31:37] Welcome sent to 230
+[2025-11-24 16:31:38] Received 76 bytes from 230
+[2025-11-24 16:31:38] Received 23 bytes from 230
+[2025-11-24 16:31:38] Received 28 bytes from 230
+[2025-11-24 16:31:38] Received 30 bytes from 230
+[2025-11-24 16:31:39] Received 45 bytes from 230
+[2025-11-24 16:31:39] Received 45 bytes from 230
+[2025-11-24 16:31:39] Received 43 bytes from 230
+[2025-11-24 16:31:39] Received 43 bytes from 230
+[2025-11-24 16:32:41] Connection 230 has disconnected
+[2025-11-24 16:32:41] New connection (244)
+[2025-11-24 16:32:41] Welcome sent to 244
+[2025-11-24 16:32:43] Received 76 bytes from 244
+[2025-11-24 16:32:43] Received 23 bytes from 244
+[2025-11-24 16:32:43] Received 28 bytes from 244
+[2025-11-24 16:32:43] Received 30 bytes from 244
+[2025-11-24 16:32:44] Received 45 bytes from 244
+[2025-11-24 16:32:44] Received 45 bytes from 244
+[2025-11-24 16:32:44] Received 43 bytes from 244
+[2025-11-24 16:32:44] Received 43 bytes from 244
+[2025-11-24 16:32:48] Received 34 bytes from 244
+[2025-11-24 16:32:52] Connection 244 has disconnected
+[2025-11-24 16:32:52] New connection (259)
+[2025-11-24 16:32:52] Welcome sent to 259
+[2025-11-24 16:32:53] Received 76 bytes from 259
+[2025-11-24 16:32:53] Received 23 bytes from 259
+[2025-11-24 16:32:53] Received 28 bytes from 259
+[2025-11-24 16:32:53] Received 30 bytes from 259
+[2025-11-24 16:32:54] Received 45 bytes from 259
+[2025-11-24 16:32:54] Received 45 bytes from 259
+[2025-11-24 16:32:54] Received 43 bytes from 259
+[2025-11-24 16:32:54] Received 43 bytes from 259
+[2025-11-24 16:32:59] Connection 169 has disconnected
+[2025-11-24 16:32:59] New connection (273)
+[2025-11-24 16:32:59] Welcome sent to 273
+[2025-11-24 16:33:00] Received 76 bytes from 273
+[2025-11-24 16:33:00] Received 23 bytes from 273
+[2025-11-24 16:33:00] Received 28 bytes from 273
+[2025-11-24 16:33:00] Received 30 bytes from 273
+[2025-11-24 16:33:01] Received 45 bytes from 273
+[2025-11-24 16:33:01] Received 45 bytes from 273
+[2025-11-24 16:33:01] Received 43 bytes from 273
+[2025-11-24 16:33:01] Received 43 bytes from 273
+[2025-11-24 16:33:05] Received 34 bytes from 273
+[2025-11-24 16:35:28] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:35:28] DB connected
+[2025-11-24 16:35:28] Chat server constructed
+[2025-11-24 16:35:28] WebSocket server started on port 8087
+[2025-11-24 16:35:29] New connection (55)
+[2025-11-24 16:35:29] Welcome sent to 55
+[2025-11-24 16:35:29] New connection (66)
+[2025-11-24 16:35:29] Welcome sent to 66
+[2025-11-24 16:35:30] Received 76 bytes from 55
+[2025-11-24 16:35:30] Received 23 bytes from 55
+[2025-11-24 16:35:30] Received 28 bytes from 55
+[2025-11-24 16:35:30] Received 30 bytes from 55
+[2025-11-24 16:35:32] Connection 66 has disconnected
+[2025-11-24 16:35:32] New connection (99)
+[2025-11-24 16:35:32] Welcome sent to 99
+[2025-11-24 16:35:34] Received 76 bytes from 99
+[2025-11-24 16:35:34] Received 23 bytes from 99
+[2025-11-24 16:35:34] Received 28 bytes from 99
+[2025-11-24 16:35:34] Received 30 bytes from 99
+[2025-11-24 16:35:37] Connection 55 has disconnected
+[2025-11-24 16:35:37] New connection (109)
+[2025-11-24 16:35:37] Welcome sent to 109
+[2025-11-24 16:35:38] Received 76 bytes from 109
+[2025-11-24 16:35:38] Received 23 bytes from 109
+[2025-11-24 16:35:38] Received 28 bytes from 109
+[2025-11-24 16:35:38] Received 30 bytes from 109
+[2025-11-24 16:35:39] Received 45 bytes from 109
+[2025-11-24 16:35:39] Received 45 bytes from 109
+[2025-11-24 16:35:39] Received 43 bytes from 109
+[2025-11-24 16:35:39] Received 43 bytes from 109
+[2025-11-24 16:36:14] Connection 109 has disconnected
+[2025-11-24 16:36:14] New connection (123)
+[2025-11-24 16:36:14] Welcome sent to 123
+[2025-11-24 16:36:16] Received 76 bytes from 123
+[2025-11-24 16:36:16] Received 23 bytes from 123
+[2025-11-24 16:36:16] Received 28 bytes from 123
+[2025-11-24 16:36:16] Received 30 bytes from 123
+[2025-11-24 16:36:16] Received 45 bytes from 123
+[2025-11-24 16:36:16] Received 45 bytes from 123
+[2025-11-24 16:36:16] Received 43 bytes from 123
+[2025-11-24 16:36:16] Received 43 bytes from 123
+[2025-11-24 16:37:49] Connection 123 has disconnected
+[2025-11-24 16:37:49] New connection (137)
+[2025-11-24 16:37:49] Welcome sent to 137
+[2025-11-24 16:37:51] Received 76 bytes from 137
+[2025-11-24 16:37:51] Received 23 bytes from 137
+[2025-11-24 16:37:51] Received 28 bytes from 137
+[2025-11-24 16:37:51] Received 30 bytes from 137
+[2025-11-24 16:37:52] Connection 137 has disconnected
+[2025-11-24 16:37:52] New connection (147)
+[2025-11-24 16:37:52] Welcome sent to 147
+[2025-11-24 16:37:53] Received 76 bytes from 147
+[2025-11-24 16:37:53] Received 23 bytes from 147
+[2025-11-24 16:37:53] Received 28 bytes from 147
+[2025-11-24 16:37:53] Received 30 bytes from 147
+[2025-11-24 16:37:54] Received 45 bytes from 147
+[2025-11-24 16:37:54] Received 45 bytes from 147
+[2025-11-24 16:37:54] Received 43 bytes from 147
+[2025-11-24 16:37:54] Received 43 bytes from 147
+[2025-11-24 16:37:56] Received 49 bytes from 147
+[2025-11-24 16:38:03] Received 45 bytes from 99
+[2025-11-24 16:38:03] Received 45 bytes from 99
+[2025-11-24 16:38:03] Received 43 bytes from 99
+[2025-11-24 16:38:03] Received 43 bytes from 99
+[2025-11-24 16:38:15] Connection 99 has disconnected
+[2025-11-24 16:38:15] New connection (166)
+[2025-11-24 16:38:15] Welcome sent to 166
+[2025-11-24 16:38:17] Received 76 bytes from 166
+[2025-11-24 16:38:17] Received 23 bytes from 166
+[2025-11-24 16:38:17] Received 28 bytes from 166
+[2025-11-24 16:38:17] Received 30 bytes from 166
+[2025-11-24 16:38:17] Received 45 bytes from 166
+[2025-11-24 16:38:17] Received 45 bytes from 166
+[2025-11-24 16:38:17] Received 43 bytes from 166
+[2025-11-24 16:38:17] Received 43 bytes from 166
+[2025-11-24 16:38:23] Received 65 bytes from 166
+[2025-11-24 16:38:31] Received 56 bytes from 147
+[2025-11-24 16:38:38] Received 44 bytes from 166
+[2025-11-24 16:38:41] Connection 166 has disconnected
+[2025-11-24 16:38:41] New connection (183)
+[2025-11-24 16:38:41] Welcome sent to 183
+[2025-11-24 16:38:42] Received 76 bytes from 183
+[2025-11-24 16:38:42] Received 23 bytes from 183
+[2025-11-24 16:38:42] Received 28 bytes from 183
+[2025-11-24 16:38:42] Received 30 bytes from 183
+[2025-11-24 16:38:44] Received 45 bytes from 183
+[2025-11-24 16:38:44] Received 45 bytes from 183
+[2025-11-24 16:38:44] Received 43 bytes from 183
+[2025-11-24 16:38:44] Received 43 bytes from 183
+[2025-11-24 16:40:30] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:40:30] DB connected
+[2025-11-24 16:40:30] Chat server constructed
+[2025-11-24 16:40:30] WebSocket server started on port 8087
+[2025-11-24 16:40:31] New connection (55)
+[2025-11-24 16:40:31] Welcome sent to 55
+[2025-11-24 16:40:31] New connection (87)
+[2025-11-24 16:40:31] Welcome sent to 87
+[2025-11-24 16:40:32] Connection 55 has disconnected
+[2025-11-24 16:40:32] Received 76 bytes from 87
+[2025-11-24 16:40:32] Received 23 bytes from 87
+[2025-11-24 16:40:32] Received 28 bytes from 87
+[2025-11-24 16:40:32] Received 30 bytes from 87
+[2025-11-24 16:40:32] New connection (99)
+[2025-11-24 16:40:32] Welcome sent to 99
+[2025-11-24 16:40:37] Received 76 bytes from 99
+[2025-11-24 16:40:37] Received 23 bytes from 99
+[2025-11-24 16:40:37] Received 28 bytes from 99
+[2025-11-24 16:40:37] Received 30 bytes from 99
+[2025-11-24 16:40:39] Connection 99 has disconnected
+[2025-11-24 16:40:39] New connection (109)
+[2025-11-24 16:40:39] Welcome sent to 109
+[2025-11-24 16:40:40] Received 76 bytes from 109
+[2025-11-24 16:40:40] Received 23 bytes from 109
+[2025-11-24 16:40:40] Received 28 bytes from 109
+[2025-11-24 16:40:40] Received 30 bytes from 109
+[2025-11-24 16:40:44] Received 44 bytes from 109
+[2025-11-24 16:40:53] Connection 109 has disconnected
+[2025-11-24 16:40:58] New connection (120)
+[2025-11-24 16:40:58] Welcome sent to 120
+[2025-11-24 16:41:06] Received 50 bytes from 120
+[2025-11-24 16:41:06] User logged in: 7 (conn 120)
+[2025-11-24 16:41:06] Connection 120 has disconnected
+[2025-11-24 16:41:06] New connection (128)
+[2025-11-24 16:41:06] Welcome sent to 128
+[2025-11-24 16:41:08] Received 76 bytes from 128
+[2025-11-24 16:41:08] Received 23 bytes from 128
+[2025-11-24 16:41:08] Received 28 bytes from 128
+[2025-11-24 16:41:08] Received 30 bytes from 128
+[2025-11-24 16:41:09] Received 45 bytes from 128
+[2025-11-24 16:41:09] Received 45 bytes from 128
+[2025-11-24 16:41:09] Received 43 bytes from 128
+[2025-11-24 16:41:09] Received 43 bytes from 128
+[2025-11-24 16:41:12] Received 49 bytes from 128
+[2025-11-24 16:41:24] Received 53 bytes from 87
+[2025-11-24 16:42:10] Received 45 bytes from 128
+[2025-11-24 16:42:10] Received 45 bytes from 128
+[2025-11-24 16:42:10] Received 43 bytes from 128
+[2025-11-24 16:42:10] Received 43 bytes from 128
+[2025-11-24 16:42:14] Received 51 bytes from 128
+[2025-11-24 16:43:21] Connection 87 has disconnected
+[2025-11-24 16:43:21] New connection (149)
+[2025-11-24 16:43:21] Welcome sent to 149
+[2025-11-24 16:43:22] Received 76 bytes from 149
+[2025-11-24 16:43:22] Received 23 bytes from 149
+[2025-11-24 16:43:22] Received 28 bytes from 149
+[2025-11-24 16:43:22] Received 30 bytes from 149
+[2025-11-24 16:43:23] Received 45 bytes from 149
+[2025-11-24 16:43:23] Received 45 bytes from 149
+[2025-11-24 16:43:23] Received 43 bytes from 149
+[2025-11-24 16:43:23] Received 43 bytes from 149
+[2025-11-24 16:43:55] New connection (162)
+[2025-11-24 16:43:55] Welcome sent to 162
+[2025-11-24 16:44:02] Received 50 bytes from 162
+[2025-11-24 16:44:02] User logged in: 7 (conn 162)
+[2025-11-24 16:44:02] Connection 162 has disconnected
+[2025-11-24 16:44:02] New connection (170)
+[2025-11-24 16:44:02] Welcome sent to 170
+[2025-11-24 16:44:02] Received 76 bytes from 170
+[2025-11-24 16:44:03] Received 23 bytes from 170
+[2025-11-24 16:44:03] Received 28 bytes from 170
+[2025-11-24 16:44:03] Received 30 bytes from 170
+[2025-11-24 16:44:22] Connection 170 has disconnected
+[2025-11-24 16:44:22] New connection (180)
+[2025-11-24 16:44:22] Welcome sent to 180
+[2025-11-24 16:45:03] New connection (185)
+[2025-11-24 16:45:03] Welcome sent to 185
+[2025-11-24 16:45:16] Received 50 bytes from 180
+[2025-11-24 16:45:16] User logged in: 7 (conn 180)
+[2025-11-24 16:45:16] Connection 180 has disconnected
+[2025-11-24 16:45:16] New connection (193)
+[2025-11-24 16:45:16] Welcome sent to 193
+[2025-11-24 16:45:16] Received 76 bytes from 193
+[2025-11-24 16:45:16] Received 23 bytes from 193
+[2025-11-24 16:45:16] Received 28 bytes from 193
+[2025-11-24 16:45:16] Received 30 bytes from 193
+[2025-11-24 16:45:17] Received 47 bytes from 185
+[2025-11-24 16:45:17] User logged in: 8 (conn 185)
+[2025-11-24 16:45:17] Connection 185 has disconnected
+[2025-11-24 16:45:17] New connection (205)
+[2025-11-24 16:45:17] Welcome sent to 205
+[2025-11-24 16:45:17] Received 76 bytes from 205
+[2025-11-24 16:45:17] Received 23 bytes from 205
+[2025-11-24 16:45:17] Received 28 bytes from 205
+[2025-11-24 16:45:17] Received 30 bytes from 205
+[2025-11-24 16:45:21] Received 45 bytes from 193
+[2025-11-24 16:45:21] Received 45 bytes from 193
+[2025-11-24 16:45:21] Received 43 bytes from 193
+[2025-11-24 16:45:21] Received 43 bytes from 193
+[2025-11-24 16:45:27] Received 45 bytes from 205
+[2025-11-24 16:45:27] Received 45 bytes from 205
+[2025-11-24 16:45:27] Received 43 bytes from 205
+[2025-11-24 16:45:27] Received 43 bytes from 205
+[2025-11-24 16:45:36] Received 49 bytes from 193
+[2025-11-24 16:45:38] Received 48 bytes from 205
+[2025-11-24 16:45:44] Received 54 bytes from 193
+[2025-11-24 16:45:56] Received 53 bytes from 205
+[2025-11-24 16:46:00] Received 50 bytes from 205
+[2025-11-24 16:46:04] Received 47 bytes from 205
+[2025-11-24 16:46:10] Received 47 bytes from 205
+[2025-11-24 16:46:13] Received 62 bytes from 193
+[2025-11-24 16:46:19] Received 47 bytes from 205
+[2025-11-24 16:46:26] Received 48 bytes from 193
+[2025-11-24 16:46:34] Received 47 bytes from 193
+[2025-11-24 16:46:41] Received 47 bytes from 205
+[2025-11-24 16:46:48] Received 47 bytes from 205
+[2025-11-24 16:46:51] Received 47 bytes from 193
+[2025-11-24 16:46:52] Received 47 bytes from 205
+[2025-11-24 16:46:57] Received 47 bytes from 205
+[2025-11-24 16:47:11] Received 47 bytes from 205
+[2025-11-24 16:47:13] Received 455 bytes from 193
+[2025-11-24 16:47:31] Received 48 bytes from 193
+[2025-11-24 16:47:32] Received 48 bytes from 205
+[2025-11-24 16:47:47] Received 48 bytes from 205
+[2025-11-24 16:47:58] Received 47 bytes from 205
+[2025-11-24 16:48:05] Connection 205 has disconnected
+[2025-11-24 16:48:21] Received 45 bytes from 149
+[2025-11-24 16:48:21] Received 45 bytes from 149
+[2025-11-24 16:48:21] Received 43 bytes from 149
+[2025-11-24 16:48:21] Received 43 bytes from 149
+[2025-11-24 16:48:26] Connection 193 has disconnected
+[2025-11-24 16:48:29] Connection 149 has disconnected
+[2025-11-24 16:48:56] Connection 128 has disconnected
+[2025-11-24 16:48:56] New connection (252)
+[2025-11-24 16:48:56] Welcome sent to 252
+[2025-11-24 16:48:57] Received 76 bytes from 252
+[2025-11-24 16:48:57] Received 23 bytes from 252
+[2025-11-24 16:48:57] Received 28 bytes from 252
+[2025-11-24 16:48:57] Received 30 bytes from 252
+[2025-11-24 16:48:58] Received 45 bytes from 252
+[2025-11-24 16:48:58] Received 45 bytes from 252
+[2025-11-24 16:48:58] Received 43 bytes from 252
+[2025-11-24 16:48:58] Received 43 bytes from 252
+[2025-11-24 16:50:27] Connection 252 has disconnected
+[2025-11-24 16:50:27] New connection (266)
+[2025-11-24 16:50:27] Welcome sent to 266
+[2025-11-24 16:50:29] Received 76 bytes from 266
+[2025-11-24 16:50:29] Received 23 bytes from 266
+[2025-11-24 16:50:29] Received 28 bytes from 266
+[2025-11-24 16:50:29] Received 30 bytes from 266
+[2025-11-24 16:50:30] Received 45 bytes from 266
+[2025-11-24 16:50:30] Received 45 bytes from 266
+[2025-11-24 16:50:30] Received 43 bytes from 266
+[2025-11-24 16:50:30] Received 43 bytes from 266
+[2025-11-24 16:50:41] Connection 266 has disconnected
+[2025-11-24 16:50:41] New connection (280)
+[2025-11-24 16:50:41] Welcome sent to 280
+[2025-11-24 16:50:42] Received 76 bytes from 280
+[2025-11-24 16:50:42] Received 23 bytes from 280
+[2025-11-24 16:50:42] Received 28 bytes from 280
+[2025-11-24 16:50:42] Received 30 bytes from 280
+[2025-11-24 16:50:43] Received 45 bytes from 280
+[2025-11-24 16:50:43] Received 45 bytes from 280
+[2025-11-24 16:50:43] Received 43 bytes from 280
+[2025-11-24 16:50:43] Received 43 bytes from 280
+[2025-11-24 16:50:45] Connection 280 has disconnected
+[2025-11-24 16:50:45] New connection (294)
+[2025-11-24 16:50:45] Welcome sent to 294
+[2025-11-24 16:50:48] Received 76 bytes from 294
+[2025-11-24 16:50:48] Received 23 bytes from 294
+[2025-11-24 16:50:48] Received 28 bytes from 294
+[2025-11-24 16:50:48] Received 30 bytes from 294
+[2025-11-24 16:50:48] Received 45 bytes from 294
+[2025-11-24 16:50:48] Received 45 bytes from 294
+[2025-11-24 16:50:48] Received 43 bytes from 294
+[2025-11-24 16:50:48] Received 43 bytes from 294
+[2025-11-24 16:51:18] Connection 294 has disconnected
+[2025-11-24 16:51:18] New connection (308)
+[2025-11-24 16:51:18] Welcome sent to 308
+[2025-11-24 16:51:20] Received 76 bytes from 308
+[2025-11-24 16:51:20] Received 23 bytes from 308
+[2025-11-24 16:51:20] Received 28 bytes from 308
+[2025-11-24 16:51:20] Received 30 bytes from 308
+[2025-11-24 16:51:20] Received 45 bytes from 308
+[2025-11-24 16:51:20] Received 45 bytes from 308
+[2025-11-24 16:51:20] Received 43 bytes from 308
+[2025-11-24 16:51:20] Received 43 bytes from 308
+[2025-11-24 16:51:30] New connection (321)
+[2025-11-24 16:51:30] Welcome sent to 321
+[2025-11-24 16:51:30] Received 76 bytes from 321
+[2025-11-24 16:51:30] Received 23 bytes from 321
+[2025-11-24 16:51:30] Received 28 bytes from 321
+[2025-11-24 16:51:30] Received 30 bytes from 321
+[2025-11-24 16:51:30] Connection 321 has disconnected
+[2025-11-24 16:51:30] New connection (331)
+[2025-11-24 16:51:30] Welcome sent to 331
+[2025-11-24 16:51:30] Received 76 bytes from 331
+[2025-11-24 16:51:30] Received 23 bytes from 331
+[2025-11-24 16:51:30] Received 28 bytes from 331
+[2025-11-24 16:51:30] Received 30 bytes from 331
+[2025-11-24 16:51:32] Received 45 bytes from 331
+[2025-11-24 16:51:32] Received 45 bytes from 331
+[2025-11-24 16:51:32] Received 43 bytes from 331
+[2025-11-24 16:51:32] Received 43 bytes from 331
+[2025-11-24 16:51:56] Connection 331 has disconnected
+[2025-11-24 16:52:50] Connection 308 has disconnected
+[2025-11-24 16:52:50] New connection (346)
+[2025-11-24 16:52:50] Welcome sent to 346
+[2025-11-24 16:52:50] Received 23 bytes from 346
+[2025-11-24 16:52:50] Received 28 bytes from 346
+[2025-11-24 16:52:50] Received 30 bytes from 346
+[2025-11-24 16:52:56] Connection 346 has disconnected
+[2025-11-24 16:52:58] New connection (355)
+[2025-11-24 16:52:58] Welcome sent to 355
+[2025-11-24 16:53:00] Received 72 bytes from 355
+[2025-11-24 16:53:24] Received 72 bytes from 355
+[2025-11-24 16:53:29] Received 72 bytes from 355
+[2025-11-24 16:53:32] Received 72 bytes from 355
+[2025-11-24 16:53:40] Received 72 bytes from 355
+[2025-11-24 16:53:55] Received 72 bytes from 355
+[2025-11-24 16:54:09] Connection 355 has disconnected
+[2025-11-24 16:54:09] New connection (367)
+[2025-11-24 16:54:09] Welcome sent to 367
+[2025-11-24 16:54:32] Received 95 bytes from 367
+[2025-11-24 16:54:32] User registered: 9 (sistemas@easycourse.com.br)
+[2025-11-24 16:54:42] Received 72 bytes from 367
+[2025-11-24 16:54:42] User logged in: 9 (conn 367)
+[2025-11-24 16:54:42] Connection 367 has disconnected
+[2025-11-24 16:54:42] New connection (377)
+[2025-11-24 16:54:42] Welcome sent to 377
+[2025-11-24 16:54:42] Received 76 bytes from 377
+[2025-11-24 16:54:42] Received 23 bytes from 377
+[2025-11-24 16:54:42] Received 28 bytes from 377
+[2025-11-24 16:54:43] Received 30 bytes from 377
+[2025-11-24 16:54:51] Received 51 bytes from 377
+[2025-11-24 16:54:51] Received 30 bytes from 377
+[2025-11-24 16:54:56] Received 51 bytes from 377
+[2025-11-24 16:54:57] Received 30 bytes from 377
+[2025-11-24 16:54:59] Connection 377 has disconnected
+[2025-11-24 16:55:00] New connection (391)
+[2025-11-24 16:55:00] Welcome sent to 391
+[2025-11-24 16:55:00] Received 76 bytes from 391
+[2025-11-24 16:55:00] Received 23 bytes from 391
+[2025-11-24 16:55:00] Received 28 bytes from 391
+[2025-11-24 16:55:00] Received 30 bytes from 391
+[2025-11-24 16:55:15] Received 51 bytes from 391
+[2025-11-24 16:55:15] Received 30 bytes from 391
+[2025-11-24 16:55:23] Connection 391 has disconnected
+[2025-11-24 16:55:23] New connection (403)
+[2025-11-24 16:55:23] Welcome sent to 403
+[2025-11-24 16:55:23] Received 76 bytes from 403
+[2025-11-24 16:55:23] Received 23 bytes from 403
+[2025-11-24 16:55:23] Received 28 bytes from 403
+[2025-11-24 16:55:23] Received 30 bytes from 403
+[2025-11-24 16:55:34] Received 51 bytes from 403
+[2025-11-24 16:55:34] Received 30 bytes from 403
+[2025-11-24 16:57:16] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:57:16] DB connected
+[2025-11-24 16:57:16] Chat server constructed
+[2025-11-24 16:57:16] WebSocket server started on port 8087
+[2025-11-24 16:57:16] New connection (55)
+[2025-11-24 16:57:16] Welcome sent to 55
+[2025-11-24 16:57:16] Received 76 bytes from 55
+[2025-11-24 16:57:16] Received 23 bytes from 55
+[2025-11-24 16:57:16] Received 28 bytes from 55
+[2025-11-24 16:57:16] Received 30 bytes from 55
+[2025-11-24 16:57:19] Connection 55 has disconnected
+[2025-11-24 16:57:20] New connection (94)
+[2025-11-24 16:57:20] Welcome sent to 94
+[2025-11-24 16:57:20] Received 76 bytes from 94
+[2025-11-24 16:57:20] Received 23 bytes from 94
+[2025-11-24 16:57:20] Received 28 bytes from 94
+[2025-11-24 16:57:20] Received 30 bytes from 94
+[2025-11-24 16:57:25] Received 51 bytes from 94
+[2025-11-24 16:57:25] Friend request 5 from 9 to 7
+[2025-11-24 16:57:25] Received 30 bytes from 94
+[2025-11-24 16:57:36] New connection (106)
+[2025-11-24 16:57:36] Welcome sent to 106
+[2025-11-24 16:57:37] Received 23 bytes from 106
+[2025-11-24 16:57:37] Received 28 bytes from 106
+[2025-11-24 16:57:37] Received 30 bytes from 106
+[2025-11-24 16:57:43] Connection 106 has disconnected
+[2025-11-24 16:57:43] New connection (115)
+[2025-11-24 16:57:43] Welcome sent to 115
+[2025-11-24 16:57:53] Received 50 bytes from 115
+[2025-11-24 16:57:53] User logged in: 7 (conn 115)
+[2025-11-24 16:57:53] Connection 115 has disconnected
+[2025-11-24 16:57:53] New connection (123)
+[2025-11-24 16:57:53] Welcome sent to 123
+[2025-11-24 16:57:53] Received 76 bytes from 123
+[2025-11-24 16:57:53] Received 23 bytes from 123
+[2025-11-24 16:57:53] Received 28 bytes from 123
+[2025-11-24 16:57:53] Received 30 bytes from 123
+[2025-11-24 16:58:00] Received 39 bytes from 123
+[2025-11-24 16:58:09] Connection 123 has disconnected
+[2025-11-24 16:58:10] New connection (134)
+[2025-11-24 16:58:10] Welcome sent to 134
+[2025-11-24 16:58:10] Received 76 bytes from 134
+[2025-11-24 16:58:10] Received 23 bytes from 134
+[2025-11-24 16:58:10] Received 28 bytes from 134
+[2025-11-24 16:58:10] Received 30 bytes from 134
+[2025-11-24 16:58:11] Received 39 bytes from 134
+[2025-11-24 16:58:29] Connection 134 has disconnected
+[2025-11-24 16:58:29] New connection (145)
+[2025-11-24 16:58:29] Welcome sent to 145
+[2025-11-24 16:58:29] Received 76 bytes from 145
+[2025-11-24 16:58:29] Received 23 bytes from 145
+[2025-11-24 16:58:29] Received 28 bytes from 145
+[2025-11-24 16:58:29] Received 30 bytes from 145
+[2025-11-24 16:58:33] Received 39 bytes from 145
+[2025-11-24 16:59:48] Bootstrap start: PHP 8.3.6
+[2025-11-24 16:59:48] DB connected
+[2025-11-24 16:59:48] Chat server constructed
+[2025-11-24 16:59:48] WebSocket server started on port 8087
+[2025-11-24 16:59:49] New connection (55)
+[2025-11-24 16:59:49] Welcome sent to 55
+[2025-11-24 16:59:49] New connection (66)
+[2025-11-24 16:59:49] Welcome sent to 66
+[2025-11-24 16:59:49] Received 76 bytes from 55
+[2025-11-24 16:59:49] Received 76 bytes from 66
+[2025-11-24 16:59:49] Received 23 bytes from 55
+[2025-11-24 16:59:49] Received 28 bytes from 55
+[2025-11-24 16:59:49] Received 30 bytes from 55
+[2025-11-24 16:59:49] Received 23 bytes from 66
+[2025-11-24 16:59:49] Received 28 bytes from 66
+[2025-11-24 16:59:49] Received 30 bytes from 66
+[2025-11-24 16:59:51] Connection 66 has disconnected
+[2025-11-24 16:59:51] New connection (103)
+[2025-11-24 16:59:51] Welcome sent to 103
+[2025-11-24 16:59:51] Received 76 bytes from 103
+[2025-11-24 16:59:51] Received 23 bytes from 103
+[2025-11-24 16:59:51] Received 28 bytes from 103
+[2025-11-24 16:59:51] Received 30 bytes from 103
+[2025-11-24 16:59:53] Received 39 bytes from 103
+[2025-11-24 16:59:53] Friend request 5 accepted by 7; contacts ensured with 9
+[2025-11-24 16:59:53] Received 23 bytes from 103
+[2025-11-24 16:59:53] Received 30 bytes from 103
+[2025-11-24 16:59:53] Received 23 bytes from 55
+[2025-11-24 16:59:55] Received 45 bytes from 103
+[2025-11-24 16:59:55] Received 45 bytes from 103
+[2025-11-24 16:59:55] Received 43 bytes from 103
+[2025-11-24 16:59:55] Received 43 bytes from 103
+[2025-11-24 17:00:06] Received 47 bytes from 103
+[2025-11-24 17:00:09] Received 45 bytes from 55
+[2025-11-24 17:00:09] Received 45 bytes from 55
+[2025-11-24 17:00:09] Received 43 bytes from 55
+[2025-11-24 17:00:09] Received 43 bytes from 55
+[2025-11-24 17:00:14] Received 53 bytes from 55
+[2025-11-24 17:00:52] Connection 103 has disconnected
+[2025-11-24 17:00:52] New connection (128)
+[2025-11-24 17:00:52] Welcome sent to 128
+[2025-11-24 17:00:52] Received 76 bytes from 128
+[2025-11-24 17:00:52] Received 23 bytes from 128
+[2025-11-24 17:00:52] Received 28 bytes from 128
+[2025-11-24 17:00:52] Received 30 bytes from 128
+[2025-11-24 17:00:59] Connection 55 has disconnected
+[2025-11-24 17:03:27] Connection 128 has disconnected

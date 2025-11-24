@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MSN Messenger Clone</title>
+	<style>
+		/* Reset básico */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			font-family: 'Tahoma', 'Verdana', sans-serif;
+			font-size: 11px;
+		}
+
+		body {
+			background: url('https://i.imgur.com/3m6u3gT.jpg') no-repeat center center fixed; /* Fundo clássico "Bliss" ou azul */
+			background-color: #2e8b57;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		/* Janela Principal */
+		.msn-window {
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, #e3efff 0%, #a4caff 100%);
+			border: 1px solid #0052a6;
+			border-radius: 8px 8px 0 0;
+			box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+		}
+
+		/* Cabeçalho */
+		.header {
+			background: linear-gradient(to bottom, #fcfdfe 0%, #dcebfd 100%);
+			padding: 10px;
+			border-bottom: 1px solid #8aa5d1;
+			display: flex;
+			align-items: center;
+		}
+
+		.avatar {
+			width: 60px;
+			height: 60px;
+			border: 2px solid #fff;
+			box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+			background-color: #ddd;
+			margin-right: 10px;
+		}
+
+		.user-info h1 {
+			font-size: 14px;
+			font-weight: bold;
+			color: #444;
+		}
+
+		.user-info .status {
+			color: #666;
+			font-style: italic;
+		}
+
+		/* Área de Conteúdo */
+		.content {
+			flex: 1;
+			display: flex;
+			padding: 5px;
+			gap: 5px;
+		}
+
+		/* Barra Lateral (Contatos/Menu) */
+		.sidebar {
+			width: 200px;
+			background-color: #fff;
+			border: 1px solid #8aa5d1;
+			overflow-y: auto;
+		}
+
+		.group-title {
+			background: #eef3fa;
+			padding: 5px;
+			font-weight: bold;
+			border-bottom: 1px solid #eee;
+			cursor: pointer;
+		}
+
+		.contact {
+			padding: 5px 10px;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+		
+		.contact:hover {
+			background-color: #ffefbb;
+			border: 1px solid #e5c365;
+		}
+
+		.status-dot {
+			width: 8px;
+			height: 8px;
+			background-color: #71b603; /* Verde online */
+			border-radius: 50%;
+			margin-right: 5px;
+			border: 1px solid #487602;
+		}
+
+		/* Área de Chat Principal */
+		.chat-area {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+
+		.chat-history {
+			flex: 1;
+			background-color: #fff;
+			border: 1px solid #8aa5d1;
+			padding: 10px;
+			overflow-y: auto;
+		}
+
+		.message {
+			margin-bottom: 8px;
+		}
+
+		.msg-header {
+			color: #888;
+			margin-bottom: 2px;
+		}
+
+		.msg-body {
+			color: #000;
+		}
+
+		/* Área de Input */
+		.chat-input-area {
+			height: 100px;
+			background-color: #fff;
+			border: 1px solid #8aa5d1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.toolbar {
+			height: 25px;
+			background: #f0f0f0;
+			border-bottom: 1px solid #ddd;
+			display: flex;
+			align-items: center;
+			padding: 0 5px;
+			gap: 10px;
+		}
+
+		.tool-btn {
+			cursor: pointer;
+			font-weight: bold;
+			color: #444;
+		}
+
+		textarea {
+			flex: 1;
+			border: none;
+			resize: none;
+			padding: 5px;
+			outline: none;
+		}
+
+		.footer-actions {
+			height: 35px;
+			background: #e3efff;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 0 10px;
+		}
+
+		.send-btn {
+			padding: 4px 15px;
+			border: 1px solid #003c74;
+			background: linear-gradient(to bottom, #fbfcfe 0%, #d8ebfe 100%);
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		
+		.send-btn:hover {
+			background: #ffeeb7;
+			border-color: #e5c365;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="msn-window">
+		<div class="header">
+			<div class="avatar">
+				<img src="https://via.placeholder.com/60" alt="Avatar">
+			</div>
+			<div class="user-info">
+				<h1>Daniel (Ocupado) &lt;seu_email@hotmail.com&gt;</h1>
+				<p class="status">"Ouvindo Supercombo - Amianto 🎵"</p>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="sidebar">
+				<div class="group-title">▼ Favoritos (2/5)</div>
+				<div class="contact">
+					<div class="status-dot"></div>
+					<span>Fulano da Silva</span>
+				</div>
+				<div class="contact">
+					<div class="status-dot" style="background-color: orange;"></div>
+					<span>Ciclano (Ausente)</span>
+				</div>
+				
+				<div class="group-title">▼ Outros Contatos (10/50)</div>
+				<div class="contact">
+					<div class="status-dot"></div>
+					<span>Beltrano</span>
+				</div>
+			</div>
+
+			<div class="chat-area">
+				<div class="chat-history">
+					<div class="message">
+						<div class="msg-header">Fulano diz:</div>
+						<div class="msg-body">E aí cara, beleza? Tocou aquele som novo?</div>
+					</div>
+					<div class="message">
+						<div class="msg-header">Daniel diz:</div>
+						<div class="msg-body">Opa, beleza! Sim, ficou muito bom.</div>
+					</div>
+					<div class="message">
+						<div class="msg-header">--- Fulano enviou um Wizz (Chamar Atenção) ---</div>
+					</div>
+				</div>
+
+				<div class="chat-input-area">
+					<div class="toolbar">
+						<span class="tool-btn" title="Emoticons">☺</span>
+						<span class="tool-btn" title="Chamar Atenção">⚡</span>
+						<span class="tool-btn" title="Enviar Arquivo">📎</span>
+						<span class="tool-btn" title="Fonte">A</span>
+					</div>
+					<textarea placeholder="Digite uma mensagem..."></textarea>
+					<div class="footer-actions">
+						<button class="send-btn">Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

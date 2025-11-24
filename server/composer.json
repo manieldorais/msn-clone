@@ -1,0 +1,17 @@
+{
+    "name": "daniel/socket",
+    "autoload": {
+        "psr-4": {
+            "Daniel\\Socket\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel Morais",
+            "email": "71730011+manieldorais@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}

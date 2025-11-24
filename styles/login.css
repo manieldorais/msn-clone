@@ -1,0 +1,139 @@
+
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Tahoma, Verdana, sans-serif; }
+html,body { height: 100%; }
+
+body {
+	background: url('../img/windows_vista_49.jpg') center/cover fixed;
+	display: flex; align-items: center; justify-content: center;
+	padding: 18px;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Container principal estilo "janela" */
+.win {
+	width: fit-content;
+	max-width: 100%;
+	background: linear-gradient(#eaf3ff,#c7e0ff);
+	border: 2px solid #0052a6;
+	border-radius: 8px;
+	box-shadow: 10px 10px 30px rgba(0,0,0,.35);
+	overflow: hidden;
+}
+
+/* Barra de título retrô */
+.titlebar {
+	background: linear-gradient(#dbeafe,#bcd8fa);
+	border-bottom: 1px solid #8aa5d1;
+	padding: 10px 12px;
+	display:flex;
+	align-items:center;
+	gap:10px;
+}
+
+.title-icon {
+	width:44px;height:44px;border:2px solid #fff;background:#fff;border-radius:3px;flex:0 0 44px;
+	display:flex;align-items:center;justify-content:center;font-weight:bold;color:#0052a6;
+	box-shadow:1px 1px 3px rgba(0,0,0,.2);
+}
+
+.title-text {
+	font-size:15px;color:#0b3b66;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+.title-sub {
+	font-size:11px;color:#456579;font-style:italic;margin-left:auto;
+}
+
+.content {
+	padding:14px;
+	display:grid;
+	grid-template-columns: 88px 1fr;
+	gap:12px;
+	align-items:start;
+}
+
+.avatar {
+	width:88px;height:88px;border-radius:4px;border:2px solid #fff;background:#ddd;
+	display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.avatar img { width:100%;height:100%;object-fit:cover;display:block; }
+
+form {
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+}
+
+label { font-size:12px;color:#234;display:block;margin-bottom:6px; }
+.field {
+	background:#fff;border:1px solid #9dbbe6;padding:8px;border-radius:4px;
+	display:flex;align-items:center;gap:8px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
+}
+input[type="email"], input[type="password"]{
+	border:none;outline:none;font-size:14px;width:100%;
+	background:transparent;
+}
+
+.row { display:flex;gap:8px;align-items:center; }
+.checkbox { display:flex;align-items:center;gap:8px;color:#234;font-size:13px; }
+
+/* Botão estilo retrô */
+.btn {
+	display:inline-flex;align-items:center;justify-content:center;gap:8px;
+	padding:10px 14px;border-radius:5px;border:1px solid #003c74;
+	background: linear-gradient(#fbfcfe,#d8ebfe);color:#003a6a;font-weight:bold;
+	cursor:pointer;font-size:15px;
+	box-shadow: 0 2px 0 rgba(0,0,0,.07);
+}
+.btn:active{ transform:translateY(1px); }
+
+.link {
+	font-size:12px;color:#004aa6;text-decoration:underline;cursor:pointer;
+}
+
+.footer {
+	background: linear-gradient(#f6fbff,#e9f4ff);
+	border-top:1px solid #c8dffa;
+	padding:10px 12px;
+	display:flex;justify-content:space-between;align-items:center;font-size:12px;
+}
+
+/* Mobile improvements */
+@media (max-width:420px){
+	.win { max-width: 100%; border-width:1px; }
+	.content { grid-template-columns: 72px 1fr; gap:10px; padding:12px; }
+	.avatar { width:72px;height:72px; }
+	.title-text { font-size:14px; }
+	.title-sub { display:none; }
+	.btn { width:100%; padding:12px; font-size:16px; }
+	.field { padding:10px; }
+	input[type="email"], input[type="password"]{ font-size:16px; }
+}
+
+/* Small accessible focus */
+input:focus { outline: 2px solid #a9c9ff; outline-offset: 2px; }
+.btn:focus { outline: 2px solid #a9c9ff; outline-offset: 2px; }
+/* Pequenos ajustes/estilos para o toggle e formulário de registro */
+.tabbar { display:flex; gap:8px; padding:10px 14px; align-items:center; }
+.tabbar button { background:transparent;border:1px solid transparent;padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:700;color:#0b3b66; }
+.tabbar button.active { background: linear-gradient(#eaf3ff,#c7eaff); border-color:#9bbbe8; box-shadow: 0 1px 0 rgba(0,0,0,.06); }
+.register-note { font-size:13px;color:#456579;margin-left:auto; }
+.form-stack { padding:14px; display:grid; grid-template-columns: 88px 1fr; gap:12px; align-items:start; }
+.form-stack .avatar { width:88px;height:88px;border-radius:4px;border:2px solid #fff;background:#ddd; display:flex;align-items:center;justify-content:center;overflow:hidden; }
+.form-wrap { display:flex; flex-direction:column; gap:10px; }
+.small-row { display:flex; gap:8px; }
+.input-inline { display:flex; gap:8px; align-items:center; }
+.link-like { background:none;border:none;padding:0;color:#004aa6;text-decoration:underline;cursor:pointer;font-size:13px; }
+/* esconder forms */
+.hidden { display:none !important; }
+/* responsivo */
+@media (max-width:420px){
+	.form-stack { grid-template-columns:72px 1fr; gap:10px; padding:12px; }
+	.tabbar { padding:8px 12px; }
+}
+.hide{
+	display:none !important;
+}

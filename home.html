@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MSN Messenger Clone</title>
+	<link rel="stylesheet" href="styles/home.css" />
+	<style>
+		/* pequenas regras locais para painel de boas-vindas / conversa */
+		.welcome-panel{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;color:#1f3b56}
+		.welcome-panel h2{margin-bottom:8px}
+		.conversation-panel.hidden{display:none}
+		.conv-header{display:flex;align-items:center;gap:10px;padding:8px;border-bottom:1px solid rgba(0,0,0,0.06);background:linear-gradient(#f6fbff,#e9f4ff)}
+		.conv-title{font-weight:700;color:#0b3b66}
+		.conv-back{background:transparent;border:1px solid transparent;padding:6px 8px;border-radius:6px;cursor:pointer}
+		.contact.active{background:linear-gradient(#eaf3ff,#d8efff);border-left:3px solid #0070d1}
+		/* mobile: botão voltar visível */
+		@media (max-width:600px){
+			.conv-back{display:inline-flex}
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="msn-window">
+		<div class="header">
+			<button class="menu-toggle" aria-label="Abrir contatos">☰</button>
+			<div class="avatar">
+				<img src="img/avatar.webp" alt="Avatar">
+			</div>
+			<div class="user-info">
+				<h1 id="userName">Usuário</h1>
+				<div style="display:flex;gap:8px;align-items:center">
+					<div id="userEmail" style="color:#456579;font-size:13px">&lt;sem email&gt;</div>
+					<button id="editStatusBtn" class="small" type="button" aria-label="Editar status">Editar status</button>
+				</div>
+				<p id="userStatus" class="status" style="margin-top:6px;color:#6b6b6b">— clique em "Editar status" para personalizar —</p>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="sidebar" id="sidebar">
+				
+				<div style="display:flex;align-items:center;gap:8px;padding:8px 12px;">
+					<strong>Contatos</strong>
+					<button id="openAdd" class="btn small" type="button" style="margin-left:auto">Adicionar</button>
+				</div>
+				<div class="group-title">▼ Favoritos (0)</div>
+				<div id="favorites"></div>
+				<div class="group-title">▼ Outros Contatos</div>
+				<div id="other-contacts"></div>
+				<div class="group-title">Convites pendentes</div>
+				<div id="invites"></div>
+				<div class="group-title">Enviar Convite</div>
+				<div id="addForm" class="add-form" hidden>
+					<input id="newEmail" type="email" placeholder="email@exemplo.com" inputmode="email" />
+					<div style="display:flex;gap:6px;margin-top:6px;">
+						<button id="sendRequest" class="btn small" type="button">Enviar solicitação</button>
+						<button id="cancelAdd" class="btn small" type="button" style="background:linear-gradient(#fff9dc,#ffeaa7);border-color:#e5c365;">Cancelar</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="chat-area">
+				<!-- painel inicial (visível ao abrir) -->
+				<div class="welcome-panel" aria-live="polite">
+					<h2>Bem-vindo ao MSN Clone</h2>
+					<p>Selecione um contato à esquerda para começar uma conversa.</p>
+					<p style="margin-top:12px;color:#456579;font-size:13px">Toque em um contato para abrir o chat. No mobile, use o botão ☰ para mostrar os contatos.</p>
+				</div>
+				
+				<!-- painel de conversa (fechado por padrão) -->
+				<div class="conversation-panel hidden" aria-hidden="true">
+					<div class="conv-header">
+						<button id="convBack" class="conv-back" aria-label="Voltar">←</button>
+						<div class="conv-title" id="convTitle">Contato</div>
+					</div>
+					
+					<!-- mensagens e input: reaproveitei estrutura existente -->
+					<div class="chat-history">
+						<!-- mensagens de exemplo; serão mantidas mas só aparecem quando abrir a conversa -->
+						<div class="message">
+							<div class="msg-header">Fulano diz:</div>
+							<div class="msg-body">E aí cara, beleza? Tocou aquele som novo?</div>
+						</div>
+						<div class="message">
+							<div class="msg-header">Daniel diz:</div>
+							<div class="msg-body">Opa, beleza! Sim, ficou muito bom.</div>
+						</div>
+						<div class="message">
+							<div class="msg-header">--- Fulano enviou um Wizz (Chamar Atenção) ---</div>
+						</div>
+					</div>
+					
+					<div class="chat-input-area">
+						<div class="toolbar">
+							<span class="tool-btn" title="Emoticons">☺</span>
+							<span class="tool-btn" title="Chamar Atenção">⚡</span>
+							<span class="tool-btn" title="Enviar Arquivo">📎</span>
+							<span class="tool-btn" title="Fonte">A</span>
+						</div>
+						<textarea id="convInput" placeholder="Digite uma mensagem..." aria-label="Mensagem"></textarea>
+						<div class="footer-actions">
+							<button id="convSend" class="send-btn">Enviar</button>
+						</div>
+					</div>
+				</div> <!-- .conversation-panel -->
+			</div>
+		</div>
+	</div>
+	
+	<script src="scripts/home.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,342 @@
+
+/* Reset básico */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Tahoma', 'Verdana', sans-serif;
+	font-size: 11px;
+}
+
+body {
+	background: url('../img/windows_vista_49.jpg') no-repeat center center fixed;
+	background-color: #2e8b57;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 3rem;
+}
+
+/* Janela Principal */
+.msn-window {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #e3efff 0%, #a4caff 100%);
+	border: 1px solid #0052a6;
+	border-radius: 8px;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+/* Cabeçalho */
+.header {
+	background: linear-gradient(to bottom, #fcfdfe 0%, #dcebfd 100%);
+	padding: 8px 10px;
+	border-bottom: 1px solid #8aa5d1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.avatar {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #fff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	background-color: #ddd;
+	margin-right: 0;
+	flex: 0 0 auto;
+}
+
+.avatar img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 2px;
+}
+
+.user-info {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.user-info h1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #444;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.user-info .status {
+	color: #666;
+	font-style: italic;
+	font-size: 11px;
+}
+
+.menu-toggle {
+	display: none;
+	background: transparent;
+	border: 1px solid #8aa5d1;
+	padding: 6px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 1;
+}
+
+/* Área de Conteúdo */
+.content {
+	flex: 1;
+	display: flex;
+	padding: 6px;
+	gap: 6px;
+	overflow: hidden;
+}
+
+/* Barra Lateral (Contatos/Menu) */
+.sidebar {
+	width: 220px;
+	background-color: #fff;
+	border: 1px solid #8aa5d1;
+	overflow-y: auto;
+	flex: 0 0 220px;
+}
+
+.group-title {
+	background: #eef3fa;
+	padding: 6px;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+}
+
+.contact {
+	padding: 8px 12px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	gap: 8px;
+}
+
+.contact:hover {
+	background-color: #ffefbb;
+	border: 1px solid #e5c365;
+}
+
+.status-dot {
+	width: 10px;
+	height: 10px;
+	background-color: #71b603;
+	border-radius: 50%;
+	margin-right: 5px;
+	border: 1px solid #487602;
+	flex: 0 0 10px;
+}
+
+/* Área de Chat Principal */
+.chat-area {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
+}
+
+.chat-history {
+	flex: 1;
+	background-color: #fff;
+	border: 1px solid #8aa5d1;
+	padding: 10px;
+	max-height: 45vh;
+		overflow:scroll;
+}
+
+.message {
+	margin-bottom: 8px;
+}
+
+.msg-header {
+	color: #888;
+	margin-bottom: 2px;
+}
+
+.msg-body {
+	color: #000;
+}
+
+/* Área de Input */
+.chat-input-area {
+	height: 110px;
+	background-color: #fff;
+	border: 1px solid #8aa5d1;
+	display: flex;
+	flex-direction: column;
+}
+
+.toolbar {
+	height: 30px;
+	background: #f0f0f0;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	gap: 10px;
+}
+
+.tool-btn {
+	cursor: pointer;
+	font-weight: bold;
+	color: #444;
+	font-size: 16px;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+.tool-btn:active {
+	transform: translateY(1px);
+}
+
+textarea {
+	flex: 1;
+	border: none;
+	resize: none;
+	padding: 8px;
+	outline: none;
+	font-size: 13px;
+}
+
+.footer-actions {
+	height: 40px;
+	background: #e3efff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.send-btn {
+	padding: 6px 16px;
+	border: 1px solid #003c74;
+	background: linear-gradient(to bottom, #fbfcfe 0%, #d8ebfe 100%);
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.send-btn:hover {
+	background: #ffeeb7;
+	border-color: #e5c365;
+}
+
+/* Small improvements for accessibility / focus */
+.menu-toggle:focus, .tool-btn:focus, .send-btn:focus, .contact:focus {
+	outline: 2px solid #a9c9ff;
+	outline-offset: 2px;
+}
+
+/* ---------------- Responsive (Mobile) ---------------- */
+@media (max-width: 800px) {
+	.msn-window {
+		max-width: 640px;
+	}
+	.sidebar {
+		width: 260px;
+		flex: 0 0 260px;
+	}
+}
+
+@media (max-width: 600px) {
+	.header {
+		padding: 8px;
+		gap: 8px;
+	}
+	.avatar {
+		width: 48px;
+		height: 48px;
+	}
+	.user-info h1 {
+		font-size: 13px;
+	}
+	.menu-toggle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 auto;
+	}
+	
+	.content {
+		flex-direction: column;
+		gap: 8px;
+		overflow: visible;
+	}
+	
+	/* Sidebar collapsível: por padrão escondida para economizar espaço */
+	.sidebar {
+		width: 100%;
+		flex: 0 0 auto;
+		max-height: 40vh;
+		display: none; /* será mostrado quando aberto */
+		border-radius: 4px;
+	}
+	
+	.sidebar.open {
+		display: block;
+	}
+	
+	.chat-area {
+		flex: 1 1 auto;
+		min-height: 0;
+	}
+	
+	.chat-history {
+		
+	}
+	
+	.chat-input-area {
+		height: auto;
+	}
+	
+	.toolbar {
+		height: 36px;
+		padding: 6px;
+	}
+	
+	.tool-btn {
+		font-size: 18px;
+		padding: 8px;
+	}
+	
+	textarea {
+		padding: 10px;
+		font-size: 15px;
+		min-height: 64px;
+	}
+	
+	.footer-actions {
+		height: 46px;
+	}
+	
+	.contact {
+		padding: 12px 14px;
+	}
+}
+/* Pequenos estilos para adicionar/convites dentro da sidebar */
+.sidebar-controls { padding:8px; border-bottom:1px solid rgba(0,0,0,0.04); display:flex; gap:8px; align-items:center; }
+.btn.small { padding:6px 8px; font-size:13px; border-radius:4px; }
+.add-form { display:flex; flex-direction:column; gap:8px; padding:8px; }
+.add-form input { padding:8px; border:1px solid #9dbbe6; border-radius:4px; font-size:14px; width:100%; }
+.invite { padding:8px 10px; display:flex; justify-content:space-between; align-items:center; gap:8px; border-bottom:1px dashed rgba(0,0,0,0.04); background:linear-gradient(#fff,#fbfeff); }
+.invite .invite-actions { display:flex; gap:6px; }
+.invite .invite-actions button { padding:6px 8px; font-size:13px; border-radius:4px; cursor:pointer; }
+.invite .accept { background:linear-gradient(#eaffdf,#c6f7a8); border:1px solid #7fbf3a; }
+.invite .decline, .invite .cancel-request { background:linear-gradient(#fff0f0,#ffdede); border:1px solid #d66; }
+@media (max-width:600px){
+	.sidebar-controls { padding:10px; }
+	.add-form input { font-size:15px; }
+}

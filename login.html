@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Entrar - MSN Messenger (Clone)</title>
+	<link rel="stylesheet" href="styles/login.css" />
+</head>
+<body>
+	<main class="win" role="main" aria-labelledby="login-title">
+		<header class="titlebar">
+			<div class="title-icon" aria-hidden="true">MSN</div>
+			<div>
+				<div id="login-title" class="title-text">Entrar — MSN Messenger (Clone)</div>
+				<div class="title-sub">Conecte-se ao mundo retrô</div>
+			</div>
+		</header>
+		
+		<!-- Toggle entre Login e Cadastro -->
+		<div class="tabbar" role="tablist" aria-label="Alternar Entrar e Cadastrar">
+			<button id="tabLogin" class="active" role="tab" aria-selected="true" type="button">Entrar</button>
+			<button id="tabRegister" role="tab" aria-selected="false" type="button">Cadastrar</button>
+		</div>
+		
+		<section class="content">
+			<div class="form-stack">
+				<div class="avatar" aria-hidden="true">
+					<img src="img/avatar.webp" alt="">
+				</div>
+				
+				<div class="forms">
+					<!-- FORMULÁRIO DE LOGIN (mantido) -->
+					<form id="loginForm" class="form-wrap" action="home.html" method="post" novalidate>
+						<div>
+							<label for="email">Endereço de e‑mail</label>
+							<div class="field">
+								<input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="seu_email@hotmail.com" required>
+							</div>
+						</div>
+						
+						<div>
+							<label for="password">Senha</label>
+							<div class="field" style="justify-content:space-between;">
+								<input id="password" name="password" type="password" autocomplete="current-password" placeholder="Senha" required>
+								<button type="button" id="togglePwd" aria-label="Mostrar senha" class="link-like">Mostrar</button>
+							</div>
+						</div>
+						
+						<div class="small-row" style="justify-content:space-between;align-items:center;">
+							<label class="checkbox"><input type="checkbox" name="remember" /> Lembrar minha conta</label>
+							<a class="link-like hide" href="#" onclick="alert('Recuperação de senha (simulada)');return false;">Esqueci a senha</a>
+						</div>
+						
+						<div style="display:flex;gap:8px;margin-top:4px;">
+							<button class="btn" type="submit">Entrar</button>
+							<a class="btn" href="#" onclick="alert('Criar conta (simulada)');return false;" style="text-decoration:none;background:linear-gradient(#fff9dc,#ffeaa7);border-color:#e5c365;">Criar conta</a>
+						</div>
+					</form>
+					
+					<!-- FORMULÁRIO DE CADASTRO SIMPLES -->
+					<form id="registerForm" class="form-wrap hidden" novalidate>
+						<div class="register-note" aria-hidden="true">Cadastro simples</div>
+						<div>
+							<label for="regName">Nome</label>
+							<div class="field">
+								<input id="regName" name="regName" type="text" placeholder="Seu nome" autocomplete="name" required>
+							</div>
+						</div>
+						
+						<div>
+							<label for="regEmail">E‑mail</label>
+							<div class="field">
+								<input id="regEmail" name="regEmail" type="email" inputmode="email" placeholder="seu_email@hotmail.com" autocomplete="email" required>
+							</div>
+						</div>
+						
+						<div>
+							<label for="regPassword">Senha</label>
+							<div class="field" style="justify-content:space-between;">
+								<input id="regPassword" name="regPassword" type="password" placeholder="Senha" required>
+								<button type="button" id="toggleRegPwd" class="link-like" aria-label="Mostrar senha">Mostrar</button>
+							</div>
+						</div>
+						
+						<div>
+							<label for="regPassword2">Confirmar senha</label>
+							<div class="field">
+								<input id="regPassword2" name="regPassword2" type="password" placeholder="Confirmar senha" required>
+							</div>
+						</div>
+						
+						<div class="small-row" style="align-items:center;">
+							<label class="checkbox"><input id="regTos" type="checkbox" required /> Aceito os termos</label>
+						</div>
+						
+						<div style="display:flex;gap:8px;margin-top:4px;">
+							<button id="submitRegister" class="btn" type="submit">Criar conta</button>
+							<button id="cancelRegister" class="btn" type="button" style="background:linear-gradient(#fff9dc,#ffeaa7);border-color:#e5c365;">Cancelar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="footer" aria-hidden="true">
+			<div>© MSN Clone</div>
+			<div style="color:#456579;font-size:12px;">Versão retrô · Mobile friendly</div>
+		</footer>
+	</main>
+	<script src="scripts/login.js"></script>
+</body>
+</html>
