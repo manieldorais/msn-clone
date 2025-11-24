@@ -1,2 +1,3 @@
 server/vendor/
 server/vendor/*
+server/websocket.log
